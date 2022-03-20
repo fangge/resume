@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0,viewport-fit=cover"
+    />
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="referrer" content="always" />
+    <script>
+      (function (docEl, t, padBaseSize) {
+        var w,
+          r = function () {
+            var nw = Math.min(docEl.getBoundingClientRect().width, padBaseSize);
+            if (nw !== w)
+              (w = nw),
+                docEl.setAttribute('style', 'font-size:' + w / 10 + 'px');
+          };
+        if ((t.setAttribute('style', 'width:1vw'), !t.style.width))
+          r(), window.addEventListener('resize', r);
+      })(document.documentElement, document.createElement('div'), 750);
+    </script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>个人简历-MrFangge</title>
+    <meta name="description" content="方阳的个人简历" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+    
+  </body>
+</html>

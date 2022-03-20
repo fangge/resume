@@ -1,43 +1,44 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>简历 | 方阳</title>
-    <link rel="stylesheet" href="main?_inline" />
-    <base target="_blank" />
-  </head>
-  <body>
-    <p class="last-modified">最后更新于2021年5月</p>
-    <a class="download-pdf" href="https://mrfangge.com/resume/resume.pdf"
+import React from 'react';
+
+import './styles/index.scss';
+import huyaLogo from '@img/huya.png';
+import yyLogo from '@img/yy.jpg';
+import lofterLogo from '@img/lofter.png';
+import neteaseLogo from '@img/netease.png';
+
+
+const App: React.FC = () => {
+  return (
+    <section className="resume">
+          <p className="last-modified">最后更新于2022年3月</p>
+    <a className="download-pdf" href="https://mrfangge.com/resume/resume.pdf"
       >下载 PDF</a
     >
 
-    <main class="content">
-      <!--基本信息-->
-      <header class="content-hd">
-        <section class="title">
-          <div class="name">
+    <main className="content">
+      {/* <!--基本信息--> */}
+      <header className="content-hd">
+        <section className="title">
+          <div className="name">
             <h1>方阳</h1>
           </div>
-          <div class="job">
+          <div className="job">
             <h2>前端开发工程师</h2>
           </div>
         </section>
-        <section class="info">
+        <section className="info">
           <ul>
             <li>男 / 1990.6</li>
             <li>广东工业大学 · 计算机科学与技术</li>
             <li>本科 / 2013年毕业</li>
           </ul>
         </section>
-        <section class="contact">
+        <section className="contact">
           <ul>
             <li>
               <a href="https://github.com/fangge"
-                ><span class="contact-link">Github - fangge</span
-                ><span class="iconfont"
+                ><span className="contact-link">Github - fangge</span
+                ><span className="iconfont"
                   ><svg width="16px" height="16px" viewBox="0 0 1024 1024">
                     <path
                       d="M941.714 512q0 143.433-83.712 258.011t-216.283 158.574q-15.433 2.853-22.565-3.986t-7.131-17.152v-120.576q0-55.442-29.696-81.152 32.585-3.438 58.587-10.277t53.723-22.272 46.299-37.998 30.281-60.014 11.703-86.016q0-69.157-45.129-117.723 21.138-52.005-4.571-116.553-16.018-5.157-46.299 6.29t-52.553 25.161l-21.723 13.714q-53.138-14.848-109.714-14.848t-109.714 14.848q-9.143-6.29-24.283-15.433t-47.726-22.016-49.152-7.717q-25.161 64.585-3.986 116.553-45.129 48.567-45.129 117.723 0 48.567 11.703 85.723t29.989 60.014 46.007 38.29 53.723 22.272 58.587 10.277q-22.857 20.553-28.014 58.843-11.995 5.705-25.71 8.558t-32.585 2.853-37.413-12.288-31.707-35.73q-10.862-18.286-27.721-29.696t-28.27-13.714l-11.447-1.719q-11.995 0-16.567 2.56t-2.853 6.583 5.157 8.009 7.424 6.839l3.986 2.853q12.581 5.705 24.869 21.723t17.993 29.147l5.705 13.129q7.424 21.723 25.161 35.145t38.29 17.152 39.717 3.986 31.707-2.011l13.129-2.304q0 21.723 0.293 50.871t0.293 30.866q0 10.277-7.424 17.152t-22.857 3.986q-132.571-43.995-216.283-158.574t-83.712-258.011q0-119.442 58.843-220.27t159.707-159.707 220.27-58.843 220.27 58.843 159.707 159.707 58.843 220.27z"
@@ -46,8 +47,8 @@
             </li>
             <li>
               <a href="mailto:fangge-sun@163.com">
-                <span class="contact-link">fangge-sun@163.com</span>
-                <span class="iconfont">
+                <span className="contact-link">fangge-sun@163.com</span>
+                <span className="iconfont">
                   <svg width="16px" height="16px" viewBox="0 0 1024 1024">
                     <path
                       d="M903.808 239.04l-818.304 0 0 545.92 852.992 0 0-545.92-34.688 0zM869.664 273.152l-329.536 329.536c-15.04 15.04-41.248 15.04-56.288 0l-329.6-329.536 715.392 0zM119.616 286.752l221.536 221.504-221.536 221.536 0-443.072zM146.848 750.848l218.464-218.432 94.432 94.4c13.952 13.952 32.512 21.664 52.256 21.664s38.304-7.712 52.256-21.664l94.432-94.432 218.432 218.432-730.304 0zM904.384 729.824l-221.536-221.568 221.536-221.568 0 443.136z"
@@ -57,9 +58,9 @@
               </a>
             </li>
             <li>
-              <a href="tel:13541295797">
-                <span class="contact-link">13541295797</span>
-                <span class="iconfont">
+              <a href="tel:13450368506">
+                <span className="contact-link">13450368506</span>
+                <span className="iconfont">
                   <svg width="16px" height="16px" viewBox="0 0 1024 1024">
                     <path
                       d="M256 1024l512 0c26.464 0 48-21.536 48-48l0-928c0-26.464-21.536-48-48-48l-512 0c-26.464 0-48 21.536-48 48l0 928c0 26.464 21.536 48 48 48zM240 48c0-8.832 7.168-16 16-16l512 0c8.832 0 16 7.168 16 16l0 928c0 8.832-7.168 16-16 16l-512 0c-8.832 0-16-7.168-16-16l0-928zM288 864l448 0c8.832 0 16-7.168 16-16l0-672c0-8.832-7.168-16-16-16l-448 0c-8.832 0-16 7.168-16 16l0 672c0 8.832 7.168 16 16 16zM304 192l416 0 0 640-416 0 0-640zM496 928c0 17.664 14.336 32 32 32s32-14.336 32-32c0-17.664-14.336-32-32-32-17.664 0-32 14.336-32 32zM448 128l128 0c8.832 0 16-7.168 16-16s-7.168-16-16-16l-128 0c-8.832 0-16 7.168-16 16s7.168 16 16 16z"
@@ -72,29 +73,29 @@
         </section>
       </header>
 
-      <div class="content-bd">
-        <div class="content-left">
-          <section class="practice">
-            <header class="section-hd">
-              <span class="section-title-l"></span>
-              <h2 class="section-title">工作经历</h2>
-              <span class="section-title-r"></span>
+      <div className="content-bd">
+        <div className="content-left">
+          <section className="practice">
+            <header className="section-hd">
+              <span className="section-title-l"></span>
+              <h2 className="section-title">工作经历</h2>
+              <span className="section-title-r"></span>
             </header>
-            <div class="section-bd">
-              <!--经历:工作-->
-              <div class="item">
-                <header class="item-hd">
-                  <h3 class="item-name">广州虎牙科技有限公司</h3>
-                  <span class="item-time">2016.12 至今</span>
-                  <a class="link-icon">
-                    <img src="./huya.png" class="logo" />
+            <div className="section-bd">
+              {/* <!--经历:工作--> */}
+              <div className="item">
+                <header className="item-hd">
+                  <h3 className="item-name">广州虎牙科技有限公司</h3>
+                  <span className="item-time">2016.12 至今</span>
+                  <a className="link-icon">
+                    <img src={huyaLogo} className="logo" />
                   </a>
                 </header>
-                <div class="item-bd">
-                  <p class="item-des">
+                <div className="item-bd">
+                  <p className="item-des">
                     于网站技术中心主要负责<i>赛事运营移动端</i>业务的前端开发，包括：
                   </p>
-                  <ul class="section-content">
+                  <ul className="section-content">
                     <li>
                       主要负责赛事运营活动的移动端组件及页面开发，比如【<a href="https://zt.huya.com/15223/mobile/index.html" target="_blank">cfm大会员活动</a>、<a href="https://zt.huya.com/14301/mobile/index.html" target="_blank">QQ名人赛活动</a>】等
                     </li>
@@ -105,38 +106,38 @@
                   </ul>
                 </div>
               </div>
-              <div class="item">
-                <header class="item-hd">
-                  <h3 class="item-name">广州欢聚时代信息科技有限公司</h3>
-                  <span class="item-time">2014.06 至 2016.12</span>
-                  <a class="link-icon">
-                    <img src="./yy.jpg" class="logo" />
+              <div className="item">
+                <header className="item-hd">
+                  <h3 className="item-name">广州欢聚时代信息科技有限公司</h3>
+                  <span className="item-time">2014.06 至 2016.12</span>
+                  <a className="link-icon">
+                    <img src={yyLogo} className="logo" />
                   </a>
                 </header>
-                <div class="item-bd">
-                  <p class="item-des">
+                <div className="item-bd">
+                  <p className="item-des">
                     于网站中心负责<i>多玩网</i>与<i>虎牙视频</i>业务的前端开发，包括：
                   </p>
-                  <ul class="section-content">
+                  <ul className="section-content">
                     <li>主导多玩网web站和移动站前端改版开发</li>
                     <li>多玩相关游戏合作专题页面开发</li>
                     <li>主导虎牙视频站web站和移动站的前端改版开发</li>
                   </ul>
                 </div>
               </div>
-              <div class="item">
-                <header class="item-hd">
-                  <h3 class="item-name">网易游戏</h3>
-                  <span class="item-time">2013.07 至 2014.06</span>
-                  <a class="link-icon">
-                    <img src="./netease.jpg" class="logo" />
+              <div className="item">
+                <header className="item-hd">
+                  <h3 className="item-name">网易游戏</h3>
+                  <span className="item-time">2013.07 至 2014.06</span>
+                  <a className="link-icon">
+                    <img src={neteaseLogo} className="logo" />
                   </a>
                 </header>
-                <div class="item-bd">
-                  <p class="item-des">
+                <div className="item-bd">
+                  <p className="item-des">
                     于网站中心参与<i>游戏官网和游戏专题活动页面</i>的前端开发，包括：
                   </p>
-                  <ul class="section-content">
+                  <ul className="section-content">
                     <li>负责和主导开发《天下3》和《大话西游2》官网页面</li>
                     <li>负责各品类游戏专题活动页面开发</li>
                     <li>
@@ -145,16 +146,16 @@
                   </ul>
                 </div>
               </div>
-              <div class="item">
-                <header class="item-hd">
-                  <h3 class="item-name">网易（实习）</h3>
-                  <span class="item-time">2012.06-2012.08</span>
-                  <a class="link-icon">
-                    <img src="./lofter.png" class="logo" />
+              <div className="item">
+                <header className="item-hd">
+                  <h3 className="item-name">网易（实习）</h3>
+                  <span className="item-time">2012.06-2012.08</span>
+                  <a className="link-icon">
+                    <img src={lofterLogo} className="logo" />
                   </a>
                 </header>
-                <div class="item-bd">
-                  <p class="item-des">
+                <div className="item-bd">
+                  <p className="item-des">
                     于<a href="https://lofter.com">Lofter轻博客</a
                     >团队参与<i>模板皮肤</i>的前端开发
                   </p>
@@ -164,25 +165,25 @@
           </section>
         </div>
 
-        <div class="content-right">
-          <section class="project">
-            <header class="section-hd">
-              <span class="section-title-l"></span>
-              <h2 class="section-title">个人项目</h2>
-              <span class="section-title-r"></span>
+        <div className="content-right">
+          <section className="project">
+            <header className="section-hd">
+              <span className="section-title-l"></span>
+              <h2 className="section-title">个人项目</h2>
+              <span className="section-title-r"></span>
             </header>
-            <div class="section-bd">
+            <div className="section-bd">
             
 
 
-              <div class="item">
-                <header class="item-hd">
-                  <span class="item-time">Vue</span>
-                  <a class="link-icon">
+              <div className="item">
+                <header className="item-hd">
+                  <span className="item-time">陪玩声鉴</span>
+                  <a className="link-icon">
                     <svg t="1622892385193" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1676"><path d="M615.6 123.6h165.5L512 589.7 242.9 123.6H63.5L512 900.4l448.5-776.9z" fill="#41B883" p-id="1677"></path><path d="M781.1 123.6H615.6L512 303 408.4 123.6H242.9L512 589.7z" fill="#34495E" p-id="1678"></path></svg>
                   </a>
                 </header>
-                <div class="item-bd">
+                <div className="item-bd">
                   <ul>
                    
                   </ul>
@@ -194,59 +195,10 @@
           </section>
         </div>
 
-        <section class="skill">
-          <header class="section-hd">
-            <span class="section-title-l"></span>
-            <h2 class="section-title">掌握技能</h2>
-            <span class="section-title-r"></span>
-          </header>
-          <div class="skillbar html">
-            <div class="filled" data-width="90%" style="width: 90%;"></div>
-            <span class="title">HTML</span>
-            <span class="percent">90%</span>
-          </div>
-          <div class="skillbar css">
-            <div class="filled" data-width=80%" style="width: 80%;"></div>
-            <span class="title">CSS</span>
-            <span class="percent">80%</span>
-          </div>
-          <div class="skillbar js">
-            <div class="filled" data-width=70%" style="width: 70%;"></div>
-            <span class="title">JS</span>
-            <span class="percent">70%</span>
-          </div>
-          <div class="skillbar sass">
-            <span class="title"> sass</span>
-            <span class="percent">90%</span>
-            <div class="filled" data-width="90%" style="width: 90%;"></div>
-          </div>
-          <div class="skillbar react">
-            <span class="title">React</span>
-            <span class="percent">60%</span>
-            <div class="filled" data-width="60%" style="width: 60%;"></div>
-          </div>
-          <div class="skillbar vue">
-            <span class="title">Vue</span>
-            <span class="percent">75%</span>
-            <div class="filled" data-width="75%" style="width: 75%;"></div>
-          </div>
-          <div class="skillbar jquery">
-            <span class="title">Jquery</span>
-            <span class="percent">90%</span>
-            <div class="filled" data-width="90%" style="width: 90%;"></div>
-          </div>
-          <div class="skillbar webpack">
-            <span class="title">webpack</span>
-            <span class="percent">70%</span>
-            <div class="filled" data-width="70%" style="width: 70%;"></div>
-          </div>
-          <div class="skillbar photoshop">
-            <span class="title">photoshop</span>
-            <span class="percent">80%</span>
-            <div class="filled" data-width="80%" style="width: 80%;"></div>
-          </div>
-        </section>
       </div>
     </main>
-  </body>
-</html>
+    </section>
+  );
+};
+
+export { App };

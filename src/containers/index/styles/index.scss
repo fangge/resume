@@ -1,12 +1,13 @@
-@import "../node_modules/compass-mixins/lib/compass/reset";
-@import "../node_modules/compass-mixins/lib/compass/css3";
+@import url(./base/base.scss);
+// @import "../node_modules/compass-mixins/lib/compass/_css3.scss";
+
 
 $color-gray: #d1d1d1;
 $color-green: #00b38a;
 $font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft YaHei", sans-serif;
 
 * {
-  @include box-sizing(border-box);
+  box-sizing: border-box;
   user-select: none;
 }
 
@@ -28,7 +29,8 @@ body {
 a {
   text-decoration: none;
   color: $color-green;
-  @include transition(all 0.2s ease-in-out);
+  transition:  all .2s ease-in-out
+  // @include transition(all 0.2s ease-in-out);
 }
 
 .last-modified {
@@ -68,13 +70,15 @@ a {
   position: relative;
   width: 1024px;
   margin: 50px auto;
-  @include border-radius(5px);
+  border-radius: 5px;
+  // @include border-radius(5px);
   background-color: #fff;
   overflow: hidden;
   @media screen and (max-width: 1024px) {
     width: 100%;
     margin: 0;
-    @include border-radius(0);
+    border-radius: 0;
+    // @include border-radius(0);
   }
 }
 
@@ -297,7 +301,8 @@ a {
     min-width: 100px;
     margin: 0 auto;
     padding: 4px 10px;
-    @include border-radius(32px);
+    border-radius: 32px;
+    // @include border-radius(32px);
     font-size: 16px;
     font-weight: bold;
     text-align: center;
@@ -361,7 +366,8 @@ a {
       font-size: 12px;
       line-height: 14px;
       border: 1px solid $color-gray;
-      @include border-radius(3px);
+      border-radius: 3px;
+      // @include border-radius(3px);
       margin: 2px;
       padding: 0 3px;
       background-color: #f7f7f7;
@@ -372,7 +378,8 @@ a {
       font-size: 12px;
       line-height: 14px;
       border: 1px solid #f3f3f3;
-      @include border-radius(3px);
+      // @include border-radius(3px);
+      border-radius:3px;
       font-weight: 500;
       color: #444;
       margin: 2px;
@@ -429,7 +436,7 @@ a {
 
 .link-icon {
   display: inline-block;
-  width: 24px;
+  min-width: 24px;
   height: 24px;
   position: absolute;
   right: 0;
