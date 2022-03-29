@@ -68,11 +68,12 @@ a {
 .content {
   position: relative;
   width: 1024px;
-  margin: 50px auto;
+  margin: 0 auto 30px;
   border-radius: 5px;
   // @include border-radius(5px);
   background-color: #fff;
   overflow: hidden;
+
   @media screen and (max-width: 1024px) {
     width: 100%;
     margin: 0;
@@ -80,7 +81,11 @@ a {
     // @include border-radius(0);
   }
 }
-
+.no-margin {
+  margin: 0 !important;
+  padding-bottom: 0 !important;
+  padding-top: 0 !important;
+}
 .content-hd {
   width: 100%;
   padding: 30px 50px;
@@ -272,7 +277,7 @@ a {
     }
 
     .item {
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
   }
 
