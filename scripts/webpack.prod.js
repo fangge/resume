@@ -24,7 +24,7 @@ function publishGhPages() {
 }
 const outputPath = path.resolve(__dirname, '../dist');
 const prodConfig = {
-  mode: process.env.NODE_ENV,
+  mode: 'production',
   devtool: 'eval',
   output: {
     filename: 'js/[name].js',
