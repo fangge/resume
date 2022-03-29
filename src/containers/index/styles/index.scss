@@ -387,7 +387,9 @@ a {
       padding: 0 3px;
       background-color: #f7f7f7;
     }
-
+    li i {
+      color: $color-green;
+    }
     strong {
       font-family: $font-family;
       font-size: 12px;
