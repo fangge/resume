@@ -10,7 +10,7 @@ import gdut from "@img/gdut.png";
 const App: React.FC = () => {
   return (
     <section className="resume">
-      <p className="last-modified">最后更新于2022年3月</p>
+      <p className="last-modified">最后更新于2022年4月</p>
       <a className="download-pdf" href="https://mrfangge.com/resume/resume.pdf">
         下载 PDF
       </a>
@@ -56,8 +56,8 @@ const App: React.FC = () => {
                 </a>
               </li>
               <li>
-                <a href="tel:13450368506">
-                  <span className="contact-link">13450368506</span>
+                <a>
+                  <span className="contact-link">可私聊</span>
                   <span className="iconfont">
                     <svg width="16px" height="16px" viewBox="0 0 1024 1024">
                       <path d="M256 1024l512 0c26.464 0 48-21.536 48-48l0-928c0-26.464-21.536-48-48-48l-512 0c-26.464 0-48 21.536-48 48l0 928c0 26.464 21.536 48 48 48zM240 48c0-8.832 7.168-16 16-16l512 0c8.832 0 16 7.168 16 16l0 928c0 8.832-7.168 16-16 16l-512 0c-8.832 0-16-7.168-16-16l0-928zM288 864l448 0c8.832 0 16-7.168 16-16l0-672c0-8.832-7.168-16-16-16l-448 0c-8.832 0-16 7.168-16 16l0 672c0 8.832 7.168 16 16 16zM304 192l416 0 0 640-416 0 0-640zM496 928c0 17.664 14.336 32 32 32s32-14.336 32-32c0-17.664-14.336-32-32-32-17.664 0-32 14.336-32 32zM448 128l128 0c8.832 0 16-7.168 16-16s-7.168-16-16-16l-128 0c-8.832 0-16 7.168-16 16s7.168 16 16 16z"></path>
