@@ -10,10 +10,15 @@ import gdut from "@img/gdut.png";
 const App: React.FC = () => {
   return (
     <section className="resume">
-      <p className="last-modified">最后更新于2022年4月</p>
-      <a className="download-pdf" href="https://mrfangge.com/resume/resume.pdf">
-        下载 PDF
-      </a>
+      <section className="resume-top">
+        <p className="last-modified">最后更新于2022年4月</p>
+        <a
+          className="download-pdf"
+          href="https://mrfangge.com/resume/resume.pdf"
+        >
+          下载 PDF
+        </a>
+      </section>
 
       <main className="content">
         {/* <!--基本信息--> */}
@@ -57,7 +62,7 @@ const App: React.FC = () => {
               </li>
               <li>
                 <a>
-                  <span className="contact-link">可私聊</span>
+                  <span className="contact-link">13450368506</span>
                   <span className="iconfont">
                     <svg width="16px" height="16px" viewBox="0 0 1024 1024">
                       <path d="M256 1024l512 0c26.464 0 48-21.536 48-48l0-928c0-26.464-21.536-48-48-48l-512 0c-26.464 0-48 21.536-48 48l0 928c0 26.464 21.536 48 48 48zM240 48c0-8.832 7.168-16 16-16l512 0c8.832 0 16 7.168 16 16l0 928c0 8.832-7.168 16-16 16l-512 0c-8.832 0-16-7.168-16-16l0-928zM288 864l448 0c8.832 0 16-7.168 16-16l0-672c0-8.832-7.168-16-16-16l-448 0c-8.832 0-16 7.168-16 16l0 672c0 8.832 7.168 16 16 16zM304 192l416 0 0 640-416 0 0-640zM496 928c0 17.664 14.336 32 32 32s32-14.336 32-32c0-17.664-14.336-32-32-32-17.664 0-32 14.336-32 32zM448 128l128 0c8.832 0 16-7.168 16-16s-7.168-16-16-16l-128 0c-8.832 0-16 7.168-16 16s7.168 16 16 16z"></path>
@@ -189,23 +194,7 @@ const App: React.FC = () => {
                       业务的前端开发，包括：
                     </p>
                     <ul className="section-content">
-                      <li>
-                        主要负责赛事运营活动的移动端组件及页面开发，比如【
-                        <a
-                          href="https://zt.huya.com/15223/mobile/index.html"
-                          target="_blank"
-                        >
-                          cfm大会员活动
-                        </a>
-                        、
-                        <a
-                          href="https://zt.huya.com/14301/mobile/index.html"
-                          target="_blank"
-                        >
-                          QQ名人赛活动
-                        </a>
-                        】等
-                      </li>
+                      <li>主要负责赛事运营活动的移动端组件及页面开发</li>
                       <li>赛事运营活动专题页生成系统框架的开发与维护</li>
                       <li>小鹿陪玩技能认证页</li>
                       <li>虎牙助手app及虎牙观众端app内的主播实名认证页</li>
@@ -499,14 +488,31 @@ const App: React.FC = () => {
                     </h3>
                   </header>
                   <div className="item-bd">
-                    <p className="item-subtitle">（1）2021年虎牙年度报告</p>
+                    <p className="item-subtitle">
+                      （1）虎牙带盐团拉新专题及组件
+                    </p>
+                    <ul className="section-content">
+                      <li>技术栈及相关库：React</li>
+                      <li>
+                        运营页面搭建系统其中一个活动组件，支持灵活换肤，2021年12月大仙生日会活动使用了此组件，领取大仙皮肤，组件曝光量84w，领取皮肤量近4k套，组件分享转化率5%
+                      </li>
+                    </ul>
+                    <p className="item-subtitle">
+                      （2）虎牙赛事徽章专题
+                    </p>
+                    <ul className="section-content">
+                      <li>技术栈及相关库：React</li>
+                      <li>
+                        跨端专题，常驻虎牙直播赛事弹幕入口，可让用户选择支持的战队并佩戴对应的战队勋章
+                      </li>
+                    </ul>
+                    <p className="item-subtitle">（2）2021年虎牙年度报告</p>
                     <ul className="section-content">
                       <li>技术栈及相关库：React、Lottie</li>
                       <li>
                         主要负责h5页面所有功能的开发，和美术一起配合，结合Lottie动画，完成了令人惊艳的h5动画效果，并在虎牙用户中达到了很高的分享率
                       </li>
                     </ul>
-                    
                   </div>
                 </div>
               </div>

@@ -31,10 +31,15 @@ a {
   transition: all 0.2s ease-in-out;
   // @include transition(all 0.2s ease-in-out);
 }
+.resume-top {
+  width: 100%;
+  height: 40px;
+  position: relative;
+}
 
 .last-modified {
   position: absolute;
-  top: 30px;
+  bottom: 10px;
   left: 50%;
   width: 1000px;
   color: #bbb;
@@ -51,7 +56,7 @@ a {
 
 .download-pdf {
   position: absolute;
-  top: 30px;
+  bottom: 10px;
   left: 50%;
   color: #bbb;
   margin-left: -500px;
