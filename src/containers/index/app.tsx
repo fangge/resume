@@ -12,12 +12,6 @@ const App: React.FC = () => {
     <section className="resume">
       <section className="resume-top">
         <p className="last-modified">最后更新于2022年4月</p>
-        <a
-          className="download-pdf"
-          href="https://mrfangge.com/resume/resume.pdf"
-        >
-          下载 PDF
-        </a>
       </section>
 
       <main className="content">
