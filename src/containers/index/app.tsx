@@ -28,7 +28,7 @@ const App: React.FC = () => {
           <section className="info">
             <ul>
               <li>男 / 年龄：31岁（1990年.6月）</li>
-              <li>工作经验：8年</li>
+              <li>工作经验：8.5年</li>
               <li>目前所在地：广州</li>
             </ul>
           </section>
