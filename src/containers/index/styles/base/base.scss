@@ -110,7 +110,7 @@ abbr[title] {
 
 b,
 strong {
-  font-weight: bolder;
+  font-weight: 800;
 }
 
 /**
@@ -373,7 +373,7 @@ template {
 *,
 *:before,
 *:after {
-  font-weight: 800;
+  font-weight: 400;
   box-sizing: border-box;
   appearance: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
