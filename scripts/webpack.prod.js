@@ -1,6 +1,5 @@
 const fs = require('fs');
 const path = require('path');
-const { spawnSync } = require('child_process');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 const { merge } = require('webpack-merge');
@@ -8,6 +7,7 @@ const baseConfig = require('./webpack.base');
 const TerserPlugin = require('terser-webpack-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const EndWebpackPlugin = require('end-webpack-plugin');
+const puppeteer = require('puppeteer-core');
 const findChrome = require('chrome-finder');
 
 const outputPath = path.resolve(__dirname, '../dist');
@@ -26,14 +26,29 @@ const prodConfig = {
       // 自定义域名
       fs.writeFileSync(path.resolve(outputPath, 'CNAME'), 'resume.mrfangge.com');
 
-      // 调用 Chrome 渲染出 PDF 文件
+      // 调用 puppeteer-core + Chrome 渲染出 PDF 文件
       const chromePath = findChrome();
-      spawnSync(chromePath, ['--headless', '--disable-gpu', `--print-to-pdf=${path.resolve(outputPath, 'resume.pdf')}`,
-        'https://resume.mrfangge.com' // 这里注意改成你的在线简历的网站
-      ]);
-
-
-
+      const browser = await puppeteer.launch({
+        executablePath: chromePath,
+        headless: true,
+        args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-gpu'],
+      });
+      try {
+        const page = await browser.newPage();
+        await page.goto('https://resume.mrfangge.com', { // 这里注意改成你的在线简历的网站
+          waitUntil: 'networkidle0',
+          timeout: 60000,
+        });
+        await page.pdf({
+          path: path.resolve(outputPath, 'resume.pdf'),
+          format: 'A4',
+          printBackground: true,
+          margin: { top: '0', right: '0', bottom: '0', left: '0' },
+        });
+        console.log('✅ PDF 生成成功:', path.resolve(outputPath, 'resume.pdf'));
+      } finally {
+        await browser.close();
+      }
     }),
   ],
   optimization: {

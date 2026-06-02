@@ -3,7 +3,7 @@ import React from "react";
 import "./styles/index.scss";
 import huyaLogo from "@img/huya.png";
 import yyLogo from "@img/yy.jpg";
-import lofterLogo from "@img/lofter.png";
+// import lofterLogo from "@img/lofter.png";
 import neteaseLogo from "@img/netease.png";
 import gdut from "@img/gdut.png";
 

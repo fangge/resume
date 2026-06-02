@@ -39,6 +39,7 @@
     "postcss-loader": "^6.2.1",
     "prettier": "2.5.0",
     "prop-types": "^15.8.1",
+    "puppeteer-core": "^25.1.0",
     "px2rem-loader": "^0.1.9",
     "qrcode.react": "^1.0.1",
     "rc-danmaku": "^1.1.0",
