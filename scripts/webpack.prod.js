@@ -35,7 +35,8 @@ const prodConfig = {
       });
       try {
         const page = await browser.newPage();
-        await page.goto('https://resume.mrfangge.com', { // 这里注意改成你的在线简历的网站
+        // 中文简历 PDF
+        await page.goto('https://resume.mrfangge.com', {
           waitUntil: 'networkidle0',
           timeout: 60000,
         });
@@ -45,7 +46,20 @@ const prodConfig = {
           printBackground: true,
           margin: { top: '0', right: '0', bottom: '0', left: '0' },
         });
-        console.log('✅ PDF 生成成功:', path.resolve(outputPath, 'resume.pdf'));
+        console.log('✅ 中文 PDF 生成成功:', path.resolve(outputPath, 'resume.pdf'));
+
+        // 英文简历 PDF
+        await page.goto('https://resume.mrfangge.com/en.html', {
+          waitUntil: 'networkidle0',
+          timeout: 60000,
+        });
+        await page.pdf({
+          path: path.resolve(outputPath, 'resume-en.pdf'),
+          format: 'A4',
+          printBackground: true,
+          margin: { top: '0', right: '0', bottom: '0', left: '0' },
+        });
+        console.log('✅ 英文 PDF 生成成功:', path.resolve(outputPath, 'resume-en.pdf'));
       } finally {
         await browser.close();
       }

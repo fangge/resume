@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./styles/index.scss";
+import "../index/styles/index.scss";
 import huyaLogo from "@img/huya.png";
 import yyLogo from "@img/yy.jpg";
 // import lofterLogo from "@img/lofter.png";
@@ -11,25 +11,25 @@ const App: React.FC = () => {
   return (
     <section className="resume">
       <section className="resume-top">
-        <p className="last-modified">最后更新于2026年6月</p>
+        <p className="last-modified">Last updated June 2025</p>
       </section>
 
       <main className="content">
-        {/* <!--基本信息--> */}
+        {/* <!--Basic Info--> */}
         <header className="content-hd">
           <section className="title">
             <div className="name">
-              <h1>方阳</h1>
+              <h1>Fang Yang</h1>
             </div>
             <div className="job">
-              <h2>前端开发工程师</h2>
+              <h2>Senior Front-End Developer</h2>
             </div>
           </section>
           <section className="info">
             <ul>
-              <li>男</li>
-              <li>工作经验：12年</li>
-              <li>目前所在地：广州</li>
+              <li>Male / Age: 36 (June 1990)</li>
+              <li>Experience: 12 years</li>
+              <li>Location: Guangzhou, China</li>
             </ul>
           </section>
           <section className="contact">
@@ -56,7 +56,7 @@ const App: React.FC = () => {
               </li>
               <li>
                 <a>
-                  <span className="contact-link">13450368506</span>
+                  <span className="contact-link">+86 134-5036-8506</span>
                   <span className="iconfont">
                     <svg width="16px" height="16px" viewBox="0 0 1024 1024">
                       <path d="M256 1024l512 0c26.464 0 48-21.536 48-48l0-928c0-26.464-21.536-48-48-48l-512 0c-26.464 0-48 21.536-48 48l0 928c0 26.464 21.536 48 48 48zM240 48c0-8.832 7.168-16 16-16l512 0c8.832 0 16 7.168 16 16l0 928c0 8.832-7.168 16-16 16l-512 0c-8.832 0-16-7.168-16-16l0-928zM288 864l448 0c8.832 0 16-7.168 16-16l0-672c0-8.832-7.168-16-16-16l-448 0c-8.832 0-16 7.168-16 16l0 672c0 8.832 7.168 16 16 16zM304 192l416 0 0 640-416 0 0-640zM496 928c0 17.664 14.336 32 32 32s32-14.336 32-32c0-17.664-14.336-32-32-32-17.664 0-32 14.336-32 32zM448 128l128 0c8.832 0 16-7.168 16-16s-7.168-16-16-16l-128 0c-8.832 0-16 7.168-16 16s7.168 16 16 16z"></path>
@@ -73,7 +73,7 @@ const App: React.FC = () => {
             <section className="practice">
               <header className="section-hd">
                 <span className="section-title-l"></span>
-                <h2 className="section-title">个人简介</h2>
+                <h2 className="section-title">Profile</h2>
                 <span className="section-title-r"></span>
               </header>
               <div className="section-bd">
@@ -81,7 +81,7 @@ const App: React.FC = () => {
                   <div className="item-bd">
                     <div className="section-content">
                       <p>
-                        12 年资深前端开发工程师，精通移动端H5开发，擅长工程化体系搭建、组件化沉淀与 AI 赋能前端效率提升。主导虎牙 DIY 平台、支付、认证、中间页等核心业务线的前端架构设计与开发，自研 3 个团队核心 npm 包，沉淀 50 + 通用业务组件，覆盖 90% 以上营收活动场景。熟练运用大模型（LLM）与 AI 辅助开发工具，落地 AI 智能助手与 Prompt 工程体系，显著提升团队开发效率。具备极强的跨团队协作能力与问题排查能力，对前端前沿技术（AI Agent、端智能）有持续研究与实践。
+                        Senior front-end developer with 12 years of experience, specializing in mobile H5 development, engineering system design, and AI-driven frontend efficiency improvement. Led frontend architecture for core business lines at Huya (DIY platform, payment, authentication). Built 3 core npm packages and 50+ reusable components covering 90%+ of revenue-generating activities. Proficient in leveraging LLMs and AI tools, having implemented an AI-powered assistant and Prompt Engineering framework that significantly improved team development efficiency. Strong cross-team collaboration and problem-solving skills, with continuous research and practice in cutting-edge technologies such as AI Agents and on-device intelligence.
                       </p>
                     </div>
                   </div>
@@ -94,7 +94,7 @@ const App: React.FC = () => {
             <section className="practice no-margin">
               <header className="section-hd">
                 <span className="section-title-l"></span>
-                <h2 className="section-title">教育经历</h2>
+                <h2 className="section-title">Education</h2>
                 <span className="section-title-r"></span>
               </header>
               <div className="section-bd">
@@ -116,9 +116,9 @@ const App: React.FC = () => {
                           p-id="2468"
                         ></path>
                       </svg>
-                      广东工业大学 计算机科学与技术 本科
+                      Guangdong University of Technology — B.S. Computer Science &amp; Technology
                     </h3>
-                    <span className="item-time">2009.9-2013.6</span>
+                    <span className="item-time">Sep 2009 – Jun 2013</span>
                     <a className="link-icon">
                       <img src={gdut} className="logo" />
                     </a>
@@ -127,15 +127,16 @@ const App: React.FC = () => {
               </div>
             </section>
           </div>
+
           <div className="content">
             <section className="practice">
               <header className="section-hd">
                 <span className="section-title-l"></span>
-                <h2 className="section-title">工作经历</h2>
+                <h2 className="section-title">Work Experience</h2>
                 <span className="section-title-r"></span>
               </header>
               <div className="section-bd">
-                {/* <!--经历:工作--> */}
+                {/* <!--Experience: Work--> */}
                 <div className="item">
                   <header className="item-hd">
                     <h3 className="item-name">
@@ -158,22 +159,22 @@ const App: React.FC = () => {
                           p-id="5688"
                         ></path>
                       </svg>
-                      <strong>广州虎牙科技有限公司</strong>
+                      <strong>Huya Inc. (广州虎牙科技)</strong>
                     </h3>
-                    <span className="item-time">2016.12 至今</span>
+                    <span className="item-time">Dec 2016 – Present</span>
                     <a className="link-icon">
                       <img src={huyaLogo} className="logo" />
                     </a>
                   </header>
                   <div className="item-bd">
                     <p className="item-des">
-                      负责虎牙直播核心赛事和营收业务（DIY 平台、支付、认证）及 AI 智能应用的前端开发与架构维护，主导团队工程化建设与组件化沉淀，支撑公司每年数百场活动快速上线。
+                      Responsible for frontend development and architecture of Huya's core revenue businesses including DIY platform, payments, authentication, and AI-powered applications. Lead team engineering initiatives and component library development, supporting hundreds of live-streaming events annually.
                     </p>
                     <ul className="section-content">
-                      <li><i>DIY 平台核心建设</i>：负责 DIY 平台整体前端架构迭代，搭建基于React 18 + pnpm v10 + Node v22+的移动端标准化开发模板，统一团队技术栈与开发规范；设计全局 JS/CSS 构建体系（Gulp）与 Tiger 发布流程，保障线上资源稳定更新。</li>
-                      <li><i>组件化与 npm 生态</i>：自研 3 个团队核心 npm 包（@diy-npm/diyrealprizeCollect收货、@diy-npm/diybindGame绑定、@diy-npm/utils工具库），沉淀好友裂变、任务抽奖、积分兑换、徽章、榜单、自办赛等 12 大类 50 + 通用业务组件，组件复用率达 80%，单个活动开发周期缩短 50%。</li>
-                      <li><i>主导 DIY 搭建平台 AI 智能助手</i>：，基于 Dify 平台实现组件问答、配置推荐、问题排障等 AI 能力</li>
-                      <li><i>核心业务支撑</i>：虎牙全场景实名认证体系（实名上麦、陪练认证、提现实名、商城端外实名等）、三方支付体系、4 个核心业务中间页及@huyafed/openapp拉起虎牙 SDK 的开发与维护，支撑公司 10 + 核心业务线的稳定运行。</li>
+                      <li><i>DIY Platform Core Development</i>: Leading overall frontend architecture iteration of our internal low-code DIY platform. Built a mobile-first standardized dev template based on React 18 + pnpm v10 + Node.js 22+, unified team tech stack and coding conventions; designed global JS/CSS build pipeline (Gulp) and Tiger deployment workflow to ensure stable production updates.</li>
+                      <li><i>Component Library &amp; npm Ecosystem</i>: Developed 3 core team npm packages (@diy-npm/diyrealprizeCollect for address collection, @diy-npm/diybindGame for game binding, @diy-npm/utils for shared utilities). Accumulated 50+ reusable business components across 12 categories (friend invites, lucky draws, points redemption, badges, leaderboards, tournaments, etc.), achieving 80% reuse rate and reducing per-activity development cycle by 50%.</li>
+                      <li><i>AI Assistant for DIY Platform</i>: Led the implementation of an AI-powered intelligent assistant based on Dify LLM platform, providing component Q&amp;A, configuration recommendations, and troubleshooting capabilities.</li>
+                      <li><i>Core Business Infrastructure</i>: Responsible for full-scenario real-name identity verification (streamer auth, coaching auth, withdrawal auth, external shopping), third-party payment system, 4 core middleware pages for cross-business navigation, and @huyafed/openapp SDK for launching the Huya app from external browsers — supporting 10+ core business lines.</li>
                     </ul>
                   </div>
                 </div>
@@ -200,22 +201,21 @@ const App: React.FC = () => {
                           p-id="5688"
                         ></path>
                       </svg>
-                      广州欢聚时代信息科技有限公司
+                      YY Inc. (广州欢聚时代)
                     </h3>
-                    <span className="item-time">2014.06 至 2016.12</span>
+                    <span className="item-time">Jun 2014 – Dec 2016</span>
                     <a className="link-icon">
                       <img src={yyLogo} className="logo" />
                     </a>
                   </header>
                   <div className="item-bd">
                     <p className="item-des">
-                      于网站中心负责<i>多玩网</i>与<i>虎牙视频</i>
-                      业务的前端开发，包括：
+                      Responsible for frontend development of <i>Duowan (多玩网)</i> gaming portal and <i>Huya Video</i> at the Website Center:
                     </p>
                     <ul className="section-content">
-                      <li>主导多玩网web站和移动站前端改版开发</li>
-                      <li>多玩相关游戏合作专题页面开发</li>
-                      <li>主导虎牙视频站web站和移动站的前端改版开发</li>
+                      <li>Led the frontend redesign and redevelopment of Duowan web portal and mobile site</li>
+                      <li>Developed game collaboration campaign landing pages</li>
+                      <li>Led the frontend redesign of Huya Video web portal and mobile site</li>
                     </ul>
                   </div>
                 </div>
@@ -242,23 +242,22 @@ const App: React.FC = () => {
                           p-id="5688"
                         ></path>
                       </svg>
-                      网易游戏
+                      NetEase Games (网易游戏)
                     </h3>
-                    <span className="item-time">2013.07 至 2014.06</span>
+                    <span className="item-time">Jul 2013 – Jun 2014</span>
                     <a className="link-icon">
                       <img src={neteaseLogo} className="logo" />
                     </a>
                   </header>
                   <div className="item-bd">
                     <p className="item-des">
-                      于网站中心参与<i>游戏官网和游戏专题活动页面</i>
-                      的前端开发，包括：
+                      Participated in <i>game official websites and campaign event landing pages</i> at the Website Center:
                     </p>
                     <ul className="section-content">
-                      <li>负责和主导开发《天下3》和《大话西游2》官网页面</li>
-                      <li>负责各品类游戏专题活动页面开发</li>
+                      <li>Led and developed official website pages for <em>Fantasy Westward Journey 2 (大话西游2)</em> and <em>Tianxia 3 (天下3)</em></li>
+                      <li>Responsible for game campaign event landing page development across various game titles</li>
                       <li>
-                        负责专题发布系统的前端开发，主导整个系统的基础架构，并推进发布系统的快速落地
+                        Led the frontend development of the campaign publishing system, architected its foundation from scratch, and drove rapid deployment across the organization
                       </li>
                     </ul>
                   </div>
@@ -271,7 +270,7 @@ const App: React.FC = () => {
             <section className="project">
               <header className="section-hd">
                 <span className="section-title-l"></span>
-                <h2 className="section-title">核心项目经历</h2>
+                <h2 className="section-title">Key Projects</h2>
                 <span className="section-title-r"></span>
               </header>
               <div className="section-bd">
@@ -294,23 +293,23 @@ const App: React.FC = () => {
                           p-id="2252"
                         ></path>
                         <path
-                          d="M512 868.266667l379.733333-189.866667c17.066667-6.4 34.133333 0 42.666667 14.933333 8.533333 14.933333 2.133333 34.133333-12.8 42.666667l-394.666667 196.266667c-8.533333 4.266667-19.2 4.266667-29.866666 0L104.533333 738.133333c-14.933333-8.533333-21.333333-27.733333-12.8-42.666666s27.733333-23.466667 42.666667-14.933334L512 868.266667zM104.533333 343.466667c-12.8-4.266667-19.2-14.933333-19.2-27.733334 0-12.8 6.4-23.466667 19.2-29.866666l394.666667-196.266667c8.533333-4.266667 19.2-4.266667 29.866667 0l394.666666 196.266667c10.666667 6.4 19.2 17.066667 19.2 29.866666 0 12.8-6.4 23.466667-19.2 29.866667l-394.666666 196.266667c-8.533333 4.266667-19.2 4.266667-29.866667 0L104.533333 343.466667zM512 475.733333l320-160-320-160-320 160 320 160z m0 0"
+                          d="M512 868.266667l379.733333-189.866667c17.066667-6.4 34.133333 0 42.666667 14.933333 8.533333 14.933333 2.133333 34.133333-12.8 42.666667l-394.666667 196.266667c-8.533333 4.266667-19.2 4.266667-29.866666 0L104.533333 738.133333c-14.933333-8.533333-21.333333-27.733333-12.8-42.666666s27.733333-23.446667 42.666667-14.933334L512 868.266667zM104.533333 343.466667c-12.8-4.266667-19.2-14.933333-19.2-27.733334 0-12.8 6.4-23.466667 19.2-29.866666l394.666667-196.266667c8.533333-4.266667 19.2-4.266667 29.866667 0l394.666666 196.266667c10.666667 6.4 19.2 17.066667 19.2 29.866666 0 12.8-6.4 23.466667-19.2 29.866667l-394.666666 196.266667c-8.533333 4.266667-19.2 4.266667-29.866667 0L104.533333 343.466667zM512 475.733333l320-160-320-160-320 160 320 160z m0 0"
                           fill="#2c2c2c"
                           p-id="2253"
                         ></path>
                       </svg>
-                      虎牙 DIY 平台前端工程化与组件化建设
+                      DIY Platform — Frontend Engineering &amp; Componentization
                     </h3>
                   </header>
                   <div className="item-bd">
-                    <p className="item-subtitle">技术栈及所用库：React、Ant Design</p>
+                    <p className="item-subtitle">Tech Stack: React, Ant Design</p>
                     <ul className="section-content">
-                      <li>搭建 DIY 平台移动端标准化开发模板，统一代码规范与构建流程，新员工上手效率提升 30%</li>
+                      <li>Built a mobile-first standardized development template for the DIY platform, unified code standards and build pipelines, improving new employee onboarding efficiency by 30%</li>
                       <li>
-                        设计并实现 3 个核心 npm 包，封装通用收货、绑定逻辑与工具函数，被团队 10 + 项目复用
+                        Designed and implemented 3 core npm packages encapsulating common prize collection, game binding logic, and utility functions — reused by 10+ projects across the company
                       </li>
                       <li>
-                        沉淀 50 + 通用业务组件，覆盖 90% 以上营收活动场景，累计支撑近千场活动快速上线
+                        Accumulated 50+ general-purpose business components covering 90%+ of revenue-generating activity scenarios, supporting nearly 1,000 events to launch rapidly over time
                       </li>
                     </ul>
 
@@ -343,19 +342,19 @@ const App: React.FC = () => {
                           p-id="2253"
                         ></path>
                       </svg>
-                      DIY 搭建平台 AI 智能助手
+                      AI-Powered Intelligent Assistant for DIY Platform
                     </h3>
                   </header>
                   <div className="item-bd">
-                    <p className="item-subtitle">技术栈：React、Dify 平台、SSE 流式传输、react-mentions、XMarkdown</p>
+                    <p className="item-subtitle">Tech Stack: React, Dify LLM Platform, SSE Streaming, react-mentions, XMarkdown</p>
                     <ul className="section-content">
-                      <li><i>基于 Dify LLM 平台</i>搭建组件智能问答系统，实现运营搭建平台的<i>AI 赋能</i></li>
-                      <li><i>SSE 流式传输</i>：通过 `fetch API + ReadableStream` 实时接收大语言模型的流式响应，优化用户等待体验</li>
-                      <li><i>多模态交互</i>：支持文本+图像多模态输入，用户可上传截图进行问题排障，提升沟通效率</li>
-                      <li><i>智能 @mention 系统</i>：自定义 `@组件名` 和 `#配置项` 触发器，实时获取页面组件信息并传递给 AI 上下文</li>
-                      <li><i>对话管理</i>：基于 conversation_id 实现多轮对话上下文维护，集成点赞/点踩反馈机制持续优化模型效果</li>
-                      <li><i>Prompt 工程</i>：设计结构化 Prompt 模板（环境、设备、分类、输入），引导 AI 输出标准化 JSON 配置推荐</li>
-                      <li><i>用户体验优化</i>：可拖拽悬浮入口、Markdown 实时渲染、Loading 状态管理、自动滚动等交互细节</li>
+                      <li><i>Dify LLM Platform Integration</i>: Built a component-based intelligent Q&amp;A system enabling <i>AI empowerment</i> for operations teams using the DIY builder</li>
+                      <li><i>SSE Streaming</i>: Real-time reception of LLM streaming responses via Fetch API + ReadableStream, significantly optimizing user wait-time experience</li>
+                      <li><i>Multi-modal Interaction</i>: Supports text + image multi-modal input; users can upload screenshots for issue troubleshooting, improving communication efficiency</li>
+                      <li><i>Intelligent @mention System</i>: Custom `@componentName` and `#configOption` triggers that dynamically fetch page component info and pass structured context to the AI</li>
+                      <li><i>Conversation Management</i>: Multi-turn dialogue context maintained via conversation_id, integrated thumbs-up/down feedback mechanism for continuous model optimization</li>
+                      <li><i>Prompt Engineering</i>: Designed structured prompt templates (environment, device, category, input) to guide AI output of standardized JSON configuration recommendations</li>
+                      <li><i>User Experience Optimization</i>: Draggable floating entry point, real-time Markdown rendering, loading state management, auto-scroll, and other interaction details</li>
                     </ul>
                   </div>
                 </div>
@@ -385,15 +384,15 @@ const App: React.FC = () => {
                           p-id="2253"
                         ></path>
                       </svg>
-                      虎牙支付与中间页体系建设
+                      Payment System &amp; Middleware Infrastructure
                     </h3>
                   </header>
                   <div className="item-bd">
-                    <p className="item-subtitle">技术栈：React、Gulp、npm、跨端通信</p>
+                    <p className="item-subtitle">Tech Stack: React, Gulp, npm, Cross-platform Communication</p>
                     <ul className="section-content">
-                      <li>负责虎牙支付 Web 端与三方支付 npm 包@huyafed/thirdpay的开发维护，支撑梗表情包支付、佣金提现等核心支付场景</li>
-                      <li>开发并维护 4 个核心业务中间页（绑定中间页、合作商拉起中间页、业务中转页等），统一跨业务跳转逻辑</li>
-                      <li>自研@huyafed/openapp拉起虎牙 SDK，解决端外拉起兼容性问题，覆盖 99% 以上移动端设备</li>
+                      <li>Responsible for Huya Payment Web-side and third-party payment npm package (@huyafed/thirdpay) development and maintenance, supporting core payment scenarios like emoji sticker purchases and commission withdrawals</li>
+                      <li>Developed and maintained 4 core business middleware pages (binding middleware, partner launch middleware, business routing middleware, etc.) unifying cross-business navigation logic</li>
+                      <li>Built @huyafed/openapp deep-linking SDK to resolve cross-browser app-launch compatibility issues, achieving 99%+ coverage across mobile devices</li>
                     </ul>
                   </div>
                 </div>

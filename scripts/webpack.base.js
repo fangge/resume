@@ -8,7 +8,8 @@ module.exports = {
     type: 'filesystem', // 使用文件缓存
   },
   entry: {
-    main: path.resolve(__dirname, '../src/packages/index/index.tsx')
+    main: path.resolve(__dirname, '../src/packages/index/index.tsx'),
+    en: path.resolve(__dirname, '../src/packages/en/index.tsx'),
   },
   resolve: {
     alias: {
@@ -81,6 +82,11 @@ module.exports = {
       filename: 'index.html',
       chunks: ['main'],
       template: path.resolve(__dirname, '../public/index.html'),
+    }),
+    new htmlWebpackPlugin({
+      filename: 'en.html',
+      chunks: ['en'],
+      template: path.resolve(__dirname, '../public/en.html'),
     })
   ],
 };
