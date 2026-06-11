@@ -11,7 +11,7 @@ const App: React.FC = () => {
   return (
     <section className="resume">
       <section className="resume-top">
-        <p className="last-modified">Last updated June 2025</p>
+        <p className="last-modified">Last updated June 2026</p>
       </section>
 
       <main className="content">
@@ -27,7 +27,6 @@ const App: React.FC = () => {
           </section>
           <section className="info">
             <ul>
-              <li>Male / Age: 36 (June 1990)</li>
               <li>Experience: 12 years</li>
               <li>Location: Guangzhou, China</li>
             </ul>
@@ -35,8 +34,8 @@ const App: React.FC = () => {
           <section className="contact">
             <ul>
               <li>
-                <a href="https://www.mrfangge.com/" target="_blank">
-                  <span className="contact-link">mrfangge.com</span>
+                <a href="https://github.com/fangge" target="_blank">
+                  <span className="contact-link">github.com/fangge</span>
                   <span className="iconfont">
                     <svg width="16px" height="16px" viewBox="0 0 1024 1024">
                       <path d="M941.714 512q0 143.433-83.712 258.011t-216.283 158.574q-15.433 2.853-22.565-3.986t-7.131-17.152v-120.576q0-55.442-29.696-81.152 32.585-3.438 58.587-10.277t53.723-22.272 46.299-37.998 30.281-60.014 11.703-86.016q0-69.157-45.129-117.723 21.138-52.005-4.571-116.553-16.018-5.157-46.299 6.29t-52.553 25.161l-21.723 13.714q-53.138-14.848-109.714-14.848t-109.714 14.848q-9.143-6.29-24.283-15.433t-47.726-22.016-49.152-7.717q-25.161 64.585-3.986 116.553-45.129 48.567-45.129 117.723 0 48.567 11.703 85.723t29.989 60.014 46.007 38.29 53.723 22.272 58.587 10.277q-22.857 20.553-28.014 58.843-11.995 5.705-25.71 8.558t-32.585 2.853-37.413-12.288-31.707-35.73q-10.862-18.286-27.721-29.696t-28.27-13.714l-11.447-1.719q-11.995 0-16.567 2.56t-2.853 6.583 5.157 8.009 7.424 6.839l3.986 2.853q12.581 5.705 24.869 21.723t17.993 29.147l5.705 13.129q7.424 21.723 25.161 35.145t38.29 17.152 39.717 3.986 31.707-2.011l13.129-2.304q0 21.723 0.293 50.871t0.293 30.866q0 10.277-7.424 17.152t-22.857 3.986q-132.571-43.995-216.283-158.574t-83.712-258.011q0-119.442 58.843-220.27t159.707-159.707 220.27-58.843 220.27 58.843 159.707 159.707 58.843 220.27z"></path>
@@ -81,9 +80,32 @@ const App: React.FC = () => {
                   <div className="item-bd">
                     <div className="section-content">
                       <p>
-                        Senior front-end developer with 12 years of experience, specializing in mobile H5 development, engineering system design, and AI-driven frontend efficiency improvement. Led frontend architecture for core business lines at Huya (DIY platform, payment, authentication). Built 3 core npm packages and 50+ reusable components covering 90%+ of revenue-generating activities. Proficient in leveraging LLMs and AI tools, having implemented an AI-powered assistant and Prompt Engineering framework that significantly improved team development efficiency. Strong cross-team collaboration and problem-solving skills, with continuous research and practice in cutting-edge technologies such as AI Agents and on-device intelligence.
+                        Senior Front-End Engineer with 12 years of experience specializing in mobile H5 development, engineering system architecture, and AI-driven productivity. Led frontend architecture for Huya's core business lines — DIY platform, payment systems, authentication, and middleware — delivering 3 core npm packages and 50+ reusable components that cover 90%+ of revenue-generating scenarios and cut per-activity development time by 50%. Built an AI-powered intelligent assistant on the Dify LLM platform with a structured Prompt Engineering framework. Active practitioner of AI Agent and on-device intelligence technologies, with strong cross-team collaboration and complex problem-solving skills.
                       </p>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <div className="content">
+            <section className="practice">
+              <header className="section-hd">
+                <span className="section-title-l"></span>
+                <h2 className="section-title">Skills</h2>
+                <span className="section-title-r"></span>
+              </header>
+              <div className="section-bd">
+                <div className="item">
+                  <div className="item-bd">
+                    <ul className="section-content">
+                      <li><strong>Frontend:</strong> React 18+, TypeScript, Ant Design</li>
+                      <li><strong>Engineering:</strong> pnpm v10+, Gulp, Node.js v22+</li>
+                      <li><strong>AI / LLM:</strong> Dify platform, Prompt Engineering, SSE streaming, multi-modal interaction, AI Agent</li>
+                      <li><strong>Cross-Platform & SDK:</strong> Mobile H5, app-launch SDK</li>
+                      <li><strong>Componentization & npm:</strong> 3 core npm packages, 50+ reusable components across 12 categories</li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -161,7 +183,7 @@ const App: React.FC = () => {
                       </svg>
                       <strong>Huya Inc. (广州虎牙科技)</strong>
                     </h3>
-                    <span className="item-time">Dec 2016 – Present</span>
+                    <span className="item-time">Dec 2016 – Jun 2026</span>
                     <a className="link-icon">
                       <img src={huyaLogo} className="logo" />
                     </a>
@@ -173,7 +195,7 @@ const App: React.FC = () => {
                     <ul className="section-content">
                       <li><i>DIY Platform Core Development</i>: Leading overall frontend architecture iteration of our internal low-code DIY platform. Built a mobile-first standardized dev template based on React 18 + pnpm v10 + Node.js 22+, unified team tech stack and coding conventions; designed global JS/CSS build pipeline (Gulp) and Tiger deployment workflow to ensure stable production updates.</li>
                       <li><i>Component Library &amp; npm Ecosystem</i>: Developed 3 core team npm packages (@diy-npm/diyrealprizeCollect for address collection, @diy-npm/diybindGame for game binding, @diy-npm/utils for shared utilities). Accumulated 50+ reusable business components across 12 categories (friend invites, lucky draws, points redemption, badges, leaderboards, tournaments, etc.), achieving 80% reuse rate and reducing per-activity development cycle by 50%.</li>
-                      <li><i>AI Assistant for DIY Platform</i>: Led the implementation of an AI-powered intelligent assistant based on Dify LLM platform, providing component Q&amp;A, configuration recommendations, and troubleshooting capabilities.</li>
+                      <li><i>AI Assistant for DIY Platform</i>: Led the implementation of an AI-powered intelligent assistant based on the Dify LLM platform, delivering component Q&amp;A, configuration recommendations, and troubleshooting. Integrated SSE streaming and multi-modal interaction (text + image), covering daily operations workflows and significantly reducing manual support overhead.</li>
                       <li><i>Core Business Infrastructure</i>: Responsible for full-scenario real-name identity verification (streamer auth, coaching auth, withdrawal auth, external shopping), third-party payment system, 4 core middleware pages for cross-business navigation, and @huyafed/openapp SDK for launching the Huya app from external browsers — supporting 10+ core business lines.</li>
                     </ul>
                   </div>
@@ -213,9 +235,9 @@ const App: React.FC = () => {
                       Responsible for frontend development of <i>Duowan (多玩网)</i> gaming portal and <i>Huya Video</i> at the Website Center:
                     </p>
                     <ul className="section-content">
-                      <li>Led the frontend redesign and redevelopment of Duowan web portal and mobile site</li>
-                      <li>Developed game collaboration campaign landing pages</li>
-                      <li>Led the frontend redesign of Huya Video web portal and mobile site</li>
+                      <li>Led end-to-end frontend redesign of Duowan web portal and mobile site, implementing responsive design across mainstream devices with significant page load performance optimization</li>
+                      <li>Developed 30+ game collaboration campaign landing pages</li>
+                      <li>Led full-stack frontend redesign of Huya Video web portal and mobile site, optimizing video playback experience and first-screen load time</li>
                     </ul>
                   </div>
                 </div>
@@ -254,10 +276,10 @@ const App: React.FC = () => {
                       Participated in <i>game official websites and campaign event landing pages</i> at the Website Center:
                     </p>
                     <ul className="section-content">
-                      <li>Led and developed official website pages for <em>Fantasy Westward Journey 2 (大话西游2)</em> and <em>Tianxia 3 (天下3)</em></li>
-                      <li>Responsible for game campaign event landing page development across various game titles</li>
+                      <li>Led frontend architecture and core module development for official websites of flagship titles (<em>Tianxia 3</em> and <em>Fantasy Westward Journey 2</em>)</li>
+                      <li>Developed 20+ marketing campaign landing pages across multiple game genres</li>
                       <li>
-                        Led the frontend development of the campaign publishing system, architected its foundation from scratch, and drove rapid deployment across the organization
+                        Architected and built the campaign publishing system's frontend from scratch, driving rapid adoption across the department and reducing campaign launch cycle by 50%
                       </li>
                     </ul>
                   </div>

@@ -35,8 +35,8 @@ const App: React.FC = () => {
           <section className="contact">
             <ul>
               <li>
-                <a href="https://www.mrfangge.com/" target="_blank">
-                  <span className="contact-link">mrfangge.com</span>
+                <a href="https://github.com/fangge" target="_blank">
+                  <span className="contact-link">github.com/fangge</span>
                   <span className="iconfont">
                     <svg width="16px" height="16px" viewBox="0 0 1024 1024">
                       <path d="M941.714 512q0 143.433-83.712 258.011t-216.283 158.574q-15.433 2.853-22.565-3.986t-7.131-17.152v-120.576q0-55.442-29.696-81.152 32.585-3.438 58.587-10.277t53.723-22.272 46.299-37.998 30.281-60.014 11.703-86.016q0-69.157-45.129-117.723 21.138-52.005-4.571-116.553-16.018-5.157-46.299 6.29t-52.553 25.161l-21.723 13.714q-53.138-14.848-109.714-14.848t-109.714 14.848q-9.143-6.29-24.283-15.433t-47.726-22.016-49.152-7.717q-25.161 64.585-3.986 116.553-45.129 48.567-45.129 117.723 0 48.567 11.703 85.723t29.989 60.014 46.007 38.29 53.723 22.272 58.587 10.277q-22.857 20.553-28.014 58.843-11.995 5.705-25.71 8.558t-32.585 2.853-37.413-12.288-31.707-35.73q-10.862-18.286-27.721-29.696t-28.27-13.714l-11.447-1.719q-11.995 0-16.567 2.56t-2.853 6.583 5.157 8.009 7.424 6.839l3.986 2.853q12.581 5.705 24.869 21.723t17.993 29.147l5.705 13.129q7.424 21.723 25.161 35.145t38.29 17.152 39.717 3.986 31.707-2.011l13.129-2.304q0 21.723 0.293 50.871t0.293 30.866q0 10.277-7.424 17.152t-22.857 3.986q-132.571-43.995-216.283-158.574t-83.712-258.011q0-119.442 58.843-220.27t159.707-159.707 220.27-58.843 220.27 58.843 159.707 159.707 58.843 220.27z"></path>
@@ -81,7 +81,7 @@ const App: React.FC = () => {
                   <div className="item-bd">
                     <div className="section-content">
                       <p>
-                        12 年资深前端开发工程师，精通移动端H5开发，擅长工程化体系搭建、组件化沉淀与 AI 赋能前端效率提升。主导虎牙 DIY 平台、支付、认证、中间页等核心业务线的前端架构设计与开发，自研 3 个团队核心 npm 包，沉淀 50 + 通用业务组件，覆盖 90% 以上营收活动场景。熟练运用大模型（LLM）与 AI 辅助开发工具，落地 AI 智能助手与 Prompt 工程体系，显著提升团队开发效率。具备极强的跨团队协作能力与问题排查能力，对前端前沿技术（AI Agent、端智能）有持续研究与实践。
+                        12 年资深前端开发工程师，精通移动端 H5 开发，擅长工程化体系搭建、组件化沉淀与 AI 赋能效率提升。主导虎牙 DIY 平台、支付、认证、中间页等核心业务线前端架构设计，自研 3 个核心 npm 包，沉淀 50+ 通用业务组件，覆盖 90% 以上营收活动场景，单个活动开发周期缩短 50%。深度运用 LLM 与 AI 辅助开发，基于 Dify 平台落地 AI 智能助手与 Prompt 工程体系；持续研究 AI Agent、端智能等前沿技术，具备极强的跨团队协作与问题排查能力。
                       </p>
                     </div>
                   </div>
@@ -90,9 +90,32 @@ const App: React.FC = () => {
             </section>
           </div>
 
+          <div className="content">
+            <section className="practice">
+              <header className="section-hd">
+                <span className="section-title-l"></span>
+                <h2 className="section-title">专业技能</h2>
+                <span className="section-title-r"></span>
+              </header>
+              <div className="section-bd">
+                <div className="item">
+                  <div className="item-bd">
+                    <ul className="section-content">
+                      <li><strong>前端框架：</strong>React 18+、TypeScript、Ant Design</li>
+                      <li><strong>工程化体系：</strong>pnpm v10+、Gulp、Node.js v22+</li>
+                      <li><strong>AI / LLM：</strong>Dify 平台、Prompt Engineering、SSE 流式传输、多模态交互、AI Agent</li>
+                      <li><strong>跨端 & SDK：</strong>移动端 H5、拉起客户端 SDK</li>
+                      <li><strong>组件化 & npm 生态：</strong>自研 3 个核心 npm 包，沉淀 50+ 通用业务组件（12 大类）</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+
           <div className="content no-margin">
             <section className="practice no-margin">
-              <header className="section-hd">
+              <header className="section-hd"> 
                 <span className="section-title-l"></span>
                 <h2 className="section-title">教育经历</h2>
                 <span className="section-title-r"></span>
@@ -160,7 +183,7 @@ const App: React.FC = () => {
                       </svg>
                       <strong>广州虎牙科技有限公司</strong>
                     </h3>
-                    <span className="item-time">2016.12 至今</span>
+                    <span className="item-time">2016.12 - 2026.6</span>
                     <a className="link-icon">
                       <img src={huyaLogo} className="logo" />
                     </a>
@@ -172,7 +195,7 @@ const App: React.FC = () => {
                     <ul className="section-content">
                       <li><i>DIY 平台核心建设</i>：负责 DIY 平台整体前端架构迭代，搭建基于React 18 + pnpm v10 + Node v22+的移动端标准化开发模板，统一团队技术栈与开发规范；设计全局 JS/CSS 构建体系（Gulp）与 Tiger 发布流程，保障线上资源稳定更新。</li>
                       <li><i>组件化与 npm 生态</i>：自研 3 个团队核心 npm 包（@diy-npm/diyrealprizeCollect收货、@diy-npm/diybindGame绑定、@diy-npm/utils工具库），沉淀好友裂变、任务抽奖、积分兑换、徽章、榜单、自办赛等 12 大类 50 + 通用业务组件，组件复用率达 80%，单个活动开发周期缩短 50%。</li>
-                      <li><i>主导 DIY 搭建平台 AI 智能助手</i>：，基于 Dify 平台实现组件问答、配置推荐、问题排障等 AI 能力</li>
+                      <li><i>主导 DIY 搭建平台 AI 智能助手</i>：基于 Dify 平台实现组件问答、配置推荐、问题排障等 AI 能力，集成 SSE 流式传输与多模态交互，覆盖运营团队日常搭建场景，显著降低人工答疑成本</li>
                       <li><i>核心业务支撑</i>：虎牙全场景实名认证体系（实名上麦、陪练认证、提现实名、商城端外实名等）、三方支付体系、4 个核心业务中间页及@huyafed/openapp拉起虎牙 SDK 的开发与维护，支撑公司 10 + 核心业务线的稳定运行。</li>
                     </ul>
                   </div>
@@ -213,9 +236,9 @@ const App: React.FC = () => {
                       业务的前端开发，包括：
                     </p>
                     <ul className="section-content">
-                      <li>主导多玩网web站和移动站前端改版开发</li>
-                      <li>多玩相关游戏合作专题页面开发</li>
-                      <li>主导虎牙视频站web站和移动站的前端改版开发</li>
+                      <li>主导多玩网 Web 站和移动站前端改版开发，采用响应式设计适配主流移动设备，页面加载性能显著优化</li>
+                      <li>负责多玩游戏合作专题页面开发，累计交付 30+ 个营销活动页面</li>
+                      <li>主导虎牙视频站 Web 端和移动端全面改版，优化视频播放体验与首屏加载速度</li>
                     </ul>
                   </div>
                 </div>
@@ -255,10 +278,10 @@ const App: React.FC = () => {
                       的前端开发，包括：
                     </p>
                     <ul className="section-content">
-                      <li>负责和主导开发《天下3》和《大话西游2》官网页面</li>
-                      <li>负责各品类游戏专题活动页面开发</li>
+                      <li>主导《天下3》和《大话西游2》官网前端开发，负责页面架构设计与核心模块实现</li>
+                      <li>负责多品类游戏专题活动页面开发，累计交付 20+ 个营销专题页面</li>
                       <li>
-                        负责专题发布系统的前端开发，主导整个系统的基础架构，并推进发布系统的快速落地
+                        主导专题发布系统的前端架构设计，从 0 到 1 搭建基础架构，推动系统在部门内快速落地，缩短专题上线周期 50%
                       </li>
                     </ul>
                   </div>
