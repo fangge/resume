@@ -27,7 +27,6 @@ const App: React.FC = () => {
           </section>
           <section className="info">
             <ul>
-              <li>Experience: 12 years</li>
               <li>Location: Guangzhou, China</li>
             </ul>
           </section>
@@ -86,6 +85,8 @@ const App: React.FC = () => {
                   </div>
                 </div>
               </div>
+
+
             </section>
           </div>
 
@@ -109,6 +110,8 @@ const App: React.FC = () => {
                   </div>
                 </div>
               </div>
+
+
             </section>
           </div>
 
@@ -285,6 +288,8 @@ const App: React.FC = () => {
                   </div>
                 </div>
               </div>
+
+
             </section>
           </div >
 
@@ -419,8 +424,107 @@ const App: React.FC = () => {
                   </div>
                 </div>
               </div>
+
+
+
+                          </section>
+          </div>
+          <div className="content">
+            <section className="project">
+              <header className="section-hd">
+                <span className="section-title-l"></span>
+                <h2 className="section-title">Vibe Coding Projects</h2>
+                <span className="section-title-r"></span>
+              </header>
+              <div className="section-bd">
+                <div className="item">
+                  <header className="item-hd">
+                    <h3 className="item-name">
+                      <a href="https://littletreecheckin.mrfangge.com/" target="_blank">
+                      <svg
+                        t="1648486800414"
+                        class="icon"
+                        viewBox="0 0 1024 1024"
+                        version="1.1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        p-id="2251"
+                        width="16"
+                        height="16"
+                      >
+                        <path
+                          d="M512 672l379.733333-189.866667c17.066667-6.4 34.133333 0 42.666667 14.933334 8.533333 14.933333 2.133333 34.133333-12.8 42.666666l-394.666667 196.266667c-8.533333 4.266667-19.2 4.266667-29.866666 0L104.533333 541.866667c-14.933333-8.533333-21.333333-27.733333-12.8-42.666667s27.733333-23.466667 42.666667-14.933333L512 672z m0 0"
+                          fill="#2c2c2c"
+                          p-id="2252"
+                        ></path>
+                        <path
+                          d="M512 868.266667l379.733333-189.866667c17.066667-6.4 34.133333 0 42.666667 14.933333 8.533333 14.933333 2.133333 34.133333-12.8 42.666667l-394.666667 196.266667c-8.533333 4.266667-19.2 4.266667-29.866666 0L104.533333 738.133333c-14.933333-8.533333-21.333333-27.733333-12.8-42.666666s27.733333-23.446667 42.666667-14.933334L512 868.266667zM104.533333 343.466667c-12.8-4.266667-19.2-14.933333-19.2-27.733334 0-12.8 6.4-23.466667 19.2-29.866666l394.666667-196.266667c8.533333-4.266667 19.2-4.266667 29.866667 0l394.666666 196.266667c10.666667 6.4 19.2 17.066667 19.2 29.866666 0 12.8-6.4 23.466667-19.2 29.866667l-394.666666 196.266667c-8.533333 4.266667-19.2 4.266667-29.866667 0L104.533333 343.466667zM512 475.733333l320-160-320-160-320 160 320 160z m0 0"
+                          fill="#2c2c2c"
+                          p-id="2253"
+                        ></path>
+                      </svg>
+                      Achievement Jungle — Vibe Coding Full-Stack Solo Build
+                      </a>
+                    </h3>
+                  </header>
+
+                  <div className="item-bd">
+                    <p className="item-subtitle">Tech Stack: React 19, TypeScript, Vite 6, TailwindCSS v4, React Router v7, Node.js, Express, Supabase, Vercel, PWA</p>
+                    <p className="item-subtitle">URL: <a href="https://littletreecheckin.mrfangge.com/" target="_blank">https://littletreecheckin.mrfangge.com/</a></p>
+                    <ul className="section-content">
+                      <li>Independently built a full-stack gamified children&apos;s habit-tracking PWA from scratch, featuring forest visualization, daily check-in with parent approval, achievement medals, fruit store, shared task competition, and 10+ core modules</li>
+                      <li>Frontend built with React 19 + TypeScript + Vite 6 + TailwindCSS v4 + motion/react, route-level code-splitting via React Router v7 with lazy loading, responsive layout across mobile/desktop, and dark mode</li>
+                      <li>Backend powered by Node.js + Express 4 + TypeScript, Supabase (PostgreSQL) for data persistence and Auth, deployed on Vercel Serverless Functions</li>
+                      <li>PWA with offline caching and install-to-homescreen support across Android Chrome, iOS Safari, and desktop — running in production with real users</li>
+                    </ul>
+                  </div>
+
+                </div>
+
+              <hr />
+              <div className="section-bd">
+                <div className="item">
+                  <header className="item-hd">
+                    <h3 className="item-name">
+                      <svg
+                        t="1648486800414"
+                        class="icon"
+                        viewBox="0 0 1024 1024"
+                        version="1.1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        p-id="2251"
+                        width="16"
+                        height="16"
+                      >
+                        <path
+                          d="M512 672l379.733333-189.866667c17.066667-6.4 34.133333 0 42.666667 14.933334 8.533333 14.933333 2.133333 34.133333-12.8 42.666666l-394.666667 196.266667c-8.533333 4.266667-19.2 4.266667-29.866666 0L104.533333 541.866667c-14.933333-8.533333-21.333333-27.733333-12.8-42.666667s27.733333-23.466667 42.666667-14.933333L512 672z m0 0"
+                          fill="#2c2c2c"
+                          p-id="2252"
+                        ></path>
+                        <path
+                          d="M512 868.266667l379.733333-189.866667c17.066667-6.4 34.133333 0 42.666667 14.933333 8.533333 14.933333 2.133333 34.133333-12.8 42.666667l-394.666667 196.266667c-8.533333 4.266667-19.2 4.266667-29.866666 0L104.533333 738.133333c-14.933333-8.533333-21.333333-27.733333-12.8-42.666666s27.733333-23.446667 42.666667-14.933334L512 868.266667zM104.533333 343.466667c-12.8-4.266667-19.2-14.933333-19.2-27.733334 0-12.8 6.4-23.466667 19.2-29.866666l394.666667-196.266667c8.533333-4.266667 19.2-4.266667 29.866667 0l394.666666 196.266667c10.666667 6.4 19.2 17.066667 19.2 29.866666 0 12.8-6.4 23.466667-19.2 29.866667l-394.666666 196.266667c-8.533333 4.266667-19.2 4.266667-29.866667 0L104.533333 343.466667zM512 475.733333l320-160-320-160-320 160 320 160z m0 0"
+                          fill="#2c2c2c"
+                          p-id="2253"
+                        ></path>
+                      </svg>
+                      Children&apos;s Growth Record — Vibe Coding Cross-Platform Desktop App
+                    </h3>
+                  </header>
+                  <div className="item-bd">
+                    <p className="item-subtitle">Tech Stack: Electron 25, React 18, Vite 4, TypeScript 5, Ant Design 5, electron-store, electron-builder</p>
+                    <p className="item-subtitle">URL：<a href="https://github.com/fangge/children-rewards-collect" target="_blank">https://github.com/fangge/children-rewards-collect</a></p>
+                    <ul className="section-content">
+                      <li>Independently built a cross-platform desktop app with Electron for macOS/Windows, designed for managing children&apos;s award records and certificate display</li>
+                      <li>Frontend powered by React 18 + Vite 4 + TypeScript 5 + Ant Design 5, featuring child profile management, certificate categorization with image upload, and a timeline visualization wall</li>
+                      <li>Local data persistence via electron-store with JSON import/export and merge support, plus custom image storage paths organized by award date</li>
+                      <li>Engineering standards include ESLint + Prettier, Git Hooks for commit validation, electron-builder for installer packaging, and pnpm for dependency management</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              </div>
             </section>
           </div>
+
         </div >
       </main >
     </section >

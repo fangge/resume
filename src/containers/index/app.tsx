@@ -87,6 +87,8 @@ const App: React.FC = () => {
                   </div>
                 </div>
               </div>
+
+
             </section>
           </div>
 
@@ -110,12 +112,14 @@ const App: React.FC = () => {
                   </div>
                 </div>
               </div>
+
+
             </section>
           </div>
 
           <div className="content no-margin">
             <section className="practice no-margin">
-              <header className="section-hd"> 
+              <header className="section-hd">
                 <span className="section-title-l"></span>
                 <h2 className="section-title">教育经历</h2>
                 <span className="section-title-r"></span>
@@ -287,6 +291,8 @@ const App: React.FC = () => {
                   </div>
                 </div>
               </div>
+
+
             </section>
           </div >
 
@@ -421,8 +427,106 @@ const App: React.FC = () => {
                   </div>
                 </div>
               </div>
+
+
+
             </section>
           </div>
+          <div className="content">
+            <section className="project">
+              <header className="section-hd">
+                <span className="section-title-l"></span>
+                <h2 className="section-title">Vibe Coding 项目</h2>
+                <span className="section-title-r"></span>
+              </header>
+              <div className="section-bd">
+                <div className="item">
+                  <header className="item-hd">
+                    <h3 className="item-name">
+
+                      <svg
+                        t="1648486800414"
+                        class="icon"
+                        viewBox="0 0 1024 1024"
+                        version="1.1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        p-id="2251"
+                        width="16"
+                        height="16"
+                      >
+                        <path
+                          d="M512 672l379.733333-189.866667c17.066667-6.4 34.133333 0 42.666667 14.933334 8.533333 14.933333 2.133333 34.133333-12.8 42.666666l-394.666667 196.266667c-8.533333 4.266667-19.2 4.266667-29.866666 0L104.533333 541.866667c-14.933333-8.533333-21.333333-27.733333-12.8-42.666667s27.733333-23.466667 42.666667-14.933333L512 672z m0 0"
+                          fill="#2c2c2c"
+                          p-id="2252"
+                        ></path>
+                        <path
+                          d="M512 868.266667l379.733333-189.866667c17.066667-6.4 34.133333 0 42.666667 14.933333 8.533333 14.933333 2.133333 34.133333-12.8 42.666667l-394.666667 196.266667c-8.533333 4.266667-19.2 4.266667-29.866666 0L104.533333 738.133333c-14.933333-8.533333-21.333333-27.733333-12.8-42.666666s27.733333-23.446667 42.666667-14.933334L512 868.266667zM104.533333 343.466667c-12.8-4.266667-19.2-14.933333-19.2-27.733334 0-12.8 6.4-23.466667 19.2-29.866666l394.666667-196.266667c8.533333-4.266667 19.2-4.266667 29.866667 0l394.666666 196.266667c10.666667 6.4 19.2 17.066667 19.2 29.866666 0 12.8-6.4 23.466667-19.2 29.866667l-394.666666 196.266667c-8.533333 4.266667-19.2 4.266667-29.866667 0L104.533333 343.466667zM512 475.733333l320-160-320-160-320 160 320 160z m0 0"
+                          fill="#2c2c2c"
+                          p-id="2253"
+                        ></path>
+                      </svg>
+                      成就丛林
+                    </h3>
+                  </header>
+
+                  <div className="item-bd">
+                    <p className="item-subtitle">技术栈：React 19、TypeScript、Vite 6、TailwindCSS v4、React Router v7、Node.js、Express、Supabase、Vercel、PWA</p>
+                    <p className="item-subtitle">项目地址：<a href="https://littletreecheckin.mrfangge.com/" target="_blank">https://littletreecheckin.mrfangge.com/</a></p>
+                    <ul className="section-content">
+                      <li>从 0 到 1 独立完成全栈游戏化儿童习惯养成 PWA 应用，覆盖森林主页可视化、每日打卡审核、勋章成就系统、果实商店、共享任务竞争等 10+ 核心功能模块</li>
+                      <li>前端基于 React 19 + TypeScript + Vite 6 + TailwindCSS v4 + motion/react，React Router v7 路由级代码分割与懒加载，实现移动端 / 桌面端自适应布局与深色模式</li>
+                      <li>后端基于 Node.js + Express 4 + TypeScript，Supabase (PostgreSQL) 数据持久化与 Auth 认证体系，全栈部署于 Vercel Serverless Functions</li>
+                      <li>支持 PWA 离线缓存与安装到主屏幕，覆盖 Android Chrome / iOS Safari / 桌面端，已有真实用户持续使用</li>
+                    </ul>
+                  </div>
+
+                </div>
+
+              <hr />
+              <div className="section-bd">
+                <div className="item">
+                  <header className="item-hd">
+                    <h3 className="item-name">
+                      <svg
+                        t="1648486800414"
+                        class="icon"
+                        viewBox="0 0 1024 1024"
+                        version="1.1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        p-id="2251"
+                        width="16"
+                        height="16"
+                      >
+                        <path
+                          d="M512 672l379.733333-189.866667c17.066667-6.4 34.133333 0 42.666667 14.933334 8.533333 14.933333 2.133333 34.133333-12.8 42.666666l-394.666667 196.266667c-8.533333 4.266667-19.2 4.266667-29.866666 0L104.533333 541.866667c-14.933333-8.533333-21.333333-27.733333-12.8-42.666667s27.733333-23.466667 42.666667-14.933333L512 672z m0 0"
+                          fill="#2c2c2c"
+                          p-id="2252"
+                        ></path>
+                        <path
+                          d="M512 868.266667l379.733333-189.866667c17.066667-6.4 34.133333 0 42.666667 14.933333 8.533333 14.933333 2.133333 34.133333-12.8 42.666667l-394.666667 196.266667c-8.533333 4.266667-19.2 4.266667-29.866666 0L104.533333 738.133333c-14.933333-8.533333-21.333333-27.733333-12.8-42.666666s27.733333-23.446667 42.666667-14.933334L512 868.266667zM104.533333 343.466667c-12.8-4.266667-19.2-14.933333-19.2-27.733334 0-12.8 6.4-23.466667 19.2-29.866666l394.666667-196.266667c8.533333-4.266667 19.2-4.266667 29.866667 0l394.666666 196.266667c10.666667 6.4 19.2 17.066667 19.2 29.866666 0 12.8-6.4 23.466667-19.2 29.866667l-394.666666 196.266667c-8.533333 4.266667-19.2 4.266667-29.866667 0L104.533333 343.466667zM512 475.733333l320-160-320-160-320 160 320 160z m0 0"
+                          fill="#2c2c2c"
+                          p-id="2253"
+                        ></path>
+                      </svg>
+                      儿童成长记录册 — Vibe Coding 跨平台桌面应用
+                    </h3>
+                  </header>
+                  <div className="item-bd">
+                    <p className="item-subtitle">技术栈：Electron 25、React 18、Vite 4、TypeScript 5、Ant Design 5、electron-store、electron-builder</p>
+                    <p className="item-subtitle">项目地址：<a href="https://github.com/fangge/children-rewards-collect" target="_blank">https://github.com/fangge/children-rewards-collect</a></p>
+                    <ul className="section-content">
+                      <li>基于 Electron 独立开发跨平台桌面应用，支持 macOS / Windows，用于管理儿童获奖信息与证书展示</li>
+                      <li>前端基于 React 18 + Vite 4 + TypeScript 5 + Ant Design 5，实现孩子档案管理、证书分类与图片上传、时间轴可视化展示墙</li>
+                      <li>使用 electron-store 实现本地数据持久化，支持 JSON 格式导入/导出及数据合并，自定义图片存储路径按奖项时间分类归档</li>
+                      <li>工程化方面配置 ESLint + Prettier 代码规范、Git Hooks 提交校验、electron-builder 安装包构建，基于 pnpm 管理依赖</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </section>
+          </div>
+
         </div >
       </main >
     </section >
