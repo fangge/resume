@@ -41,12 +41,12 @@ const prodConfig = {
           timeout: 60000,
         });
         await page.pdf({
-          path: path.resolve(outputPath, 'resume.pdf'),
+          path: path.resolve(outputPath, '方阳-前端开发工程师.pdf'),
           format: 'A4',
           printBackground: true,
           margin: { top: '0', right: '0', bottom: '0', left: '0' },
         });
-        console.log('✅ 中文 PDF 生成成功:', path.resolve(outputPath, 'resume.pdf'));
+        console.log('✅ 中文 PDF 生成成功:', path.resolve(outputPath, '方阳-前端开发工程师.pdf'));
 
         // 英文简历 PDF
         await page.goto('https://resume.mrfangge.com/en.html', {
@@ -54,12 +54,12 @@ const prodConfig = {
           timeout: 60000,
         });
         await page.pdf({
-          path: path.resolve(outputPath, 'resume-en.pdf'),
+          path: path.resolve(outputPath, 'Fang Yang - Senior Front-End Developer.pdf'),
           format: 'A4',
           printBackground: true,
           margin: { top: '0', right: '0', bottom: '0', left: '0' },
         });
-        console.log('✅ 英文 PDF 生成成功:', path.resolve(outputPath, 'resume-en.pdf'));
+        console.log('✅ 英文 PDF 生成成功:', path.resolve(outputPath, 'Fang Yang - Senior Front-End Developer.pdf'));
       } finally {
         await browser.close();
       }
