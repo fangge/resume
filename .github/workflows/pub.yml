@@ -18,7 +18,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'    # use a broadly compatible LTS
+          node-version: '22'    # use a broadly compatible LTS
           cache: 'npm'
 
       - name: Debug Node & Build
