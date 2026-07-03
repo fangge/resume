@@ -7,10 +7,8 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    # remove forcing actions to Node24 unless necessary
-    # env:
-    #   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -18,15 +16,11 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '22'    # use a broadly compatible LTS
+          node-version: '22'
           cache: 'npm'
 
-      - name: Debug Node & Build
-        run: |
-          node -v
-          npm -v
-          npm ci --prefer-offline --no-audit
-          npm run build --if-present --loglevel verbose
+      - name: Install & Build
+        run: npm install && npm run build
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
