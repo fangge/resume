@@ -1,7 +1,6 @@
 const fs = require('fs');
 const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 const { merge } = require('webpack-merge');
 const baseConfig = require('./webpack.base');
 const TerserPlugin = require('terser-webpack-plugin');
@@ -21,7 +20,6 @@ const prodConfig = {
   },
   plugins: [
     new CleanWebpackPlugin(),
-    new FriendlyErrorsWebpackPlugin(),
     new EndWebpackPlugin(async () => {
       // 自定义域名
       fs.writeFileSync(path.resolve(outputPath, 'CNAME'), 'resume.mrfangge.com');
