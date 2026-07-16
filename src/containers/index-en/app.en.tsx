@@ -101,8 +101,8 @@ const App: React.FC = () => {
                 <div className="item">
                   <div className="item-bd">
                     <ul className="section-content">
-                      <li><strong>Frontend:</strong> React 18+, TypeScript, Ant Design</li>
-                      <li><strong>Engineering:</strong> pnpm v10+, Gulp, Node.js v22+</li>
+                      <li><strong>Frontend:</strong> React, TypeScript, Ant Design</li>
+                      <li><strong>Engineering:</strong> pnpm, Gulp, Node.js</li>
                       <li><strong>AI / LLM:</strong> Dify platform, Prompt Engineering, SSE streaming, multi-modal interaction, AI Agent</li>
                       <li><strong>Cross-Platform & SDK:</strong> Mobile H5, app-launch SDK</li>
                       <li><strong>Componentization & npm:</strong> 3 core npm packages, 50+ reusable components across 12 categories</li>
@@ -196,7 +196,7 @@ const App: React.FC = () => {
                       Responsible for frontend development and architecture of Huya's core revenue businesses including DIY platform, payments, authentication, and AI-powered applications. Lead team engineering initiatives and component library development, supporting hundreds of live-streaming events annually.
                     </p>
                     <ul className="section-content">
-                      <li><i>DIY Platform Core Development</i>: Leading overall frontend architecture iteration of our internal low-code DIY platform. Built a mobile-first standardized dev template based on React 18 + pnpm v10 + Node.js 22+, unified team tech stack and coding conventions; designed global JS/CSS build pipeline (Gulp) and Tiger deployment workflow to ensure stable production updates.</li>
+                      <li><i>DIY Platform Core Development</i>: Leading overall frontend architecture iteration of our internal low-code DIY platform. Built a mobile-first standardized dev template based on React + pnpm + Node.js, unified team tech stack and coding conventions; designed global JS/CSS build pipeline (Gulp) and Tiger deployment workflow to ensure stable production updates.</li>
                       <li><i>Component Library &amp; npm Ecosystem</i>: Developed 3 core team npm packages (@diy-npm/diyrealprizeCollect for address collection, @diy-npm/diybindGame for game binding, @diy-npm/utils for shared utilities). Accumulated 50+ reusable business components across 12 categories (friend invites, lucky draws, points redemption, badges, leaderboards, tournaments, etc.), achieving 80% reuse rate and reducing per-activity development cycle by 50%.</li>
                       <li><i>AI Assistant for DIY Platform</i>: Led the implementation of an AI-powered intelligent assistant based on the Dify LLM platform, delivering component Q&amp;A, configuration recommendations, and troubleshooting. Integrated SSE streaming and multi-modal interaction (text + image), covering daily operations workflows and significantly reducing manual support overhead.</li>
                       <li><i>Core Business Infrastructure</i>: Responsible for full-scenario real-name identity verification (streamer auth, coaching auth, withdrawal auth, external shopping), third-party payment system, 4 core middleware pages for cross-business navigation, and @huyafed/openapp SDK for launching the Huya app from external browsers — supporting 10+ core business lines.</li>
@@ -468,12 +468,12 @@ const App: React.FC = () => {
                   </header>
 
                   <div className="item-bd">
-                    <p className="item-subtitle">Tech Stack: React 19, TypeScript, Vite 6, TailwindCSS v4, React Router v7, Node.js, Express, Supabase, Vercel, PWA</p>
+                    <p className="item-subtitle">Tech Stack: React, TypeScript, Vite, TailwindCSS, React Router, Node.js, Express, Supabase, Vercel, PWA</p>
                     <p className="item-subtitle">URL: <a href="https://littletreecheckin.mrfangge.com/" target="_blank">https://littletreecheckin.mrfangge.com/</a></p>
                     <ul className="section-content">
                       <li>Independently built a full-stack gamified children&apos;s habit-tracking PWA from scratch, featuring forest visualization, daily check-in with parent approval, achievement medals, fruit store, shared task competition, and 10+ core modules</li>
-                      <li>Frontend built with React 19 + TypeScript + Vite 6 + TailwindCSS v4 + motion/react, route-level code-splitting via React Router v7 with lazy loading, responsive layout across mobile/desktop, and dark mode</li>
-                      <li>Backend powered by Node.js + Express 4 + TypeScript, Supabase (PostgreSQL) for data persistence and Auth, deployed on Vercel Serverless Functions</li>
+                      <li>Frontend built with React + TypeScript + Vite + TailwindCSS + motion/react, route-level code-splitting via React Router with lazy loading, responsive layout across mobile/desktop, and dark mode</li>
+                      <li>Backend powered by Node.js + Express + TypeScript, Supabase (PostgreSQL) for data persistence and Auth, deployed on Vercel Serverless Functions</li>
                       <li>PWA with offline caching and install-to-homescreen support across Android Chrome, iOS Safari, and desktop — running in production with real users</li>
                     </ul>
                   </div>
@@ -510,13 +510,88 @@ const App: React.FC = () => {
                     </h3>
                   </header>
                   <div className="item-bd">
-                    <p className="item-subtitle">Tech Stack: Electron 25, React 18, Vite 4, TypeScript 5, Ant Design 5, electron-store, electron-builder</p>
+                    <p className="item-subtitle">Tech Stack: Electron, React, Vite, TypeScript, Ant Design, electron-store, electron-builder</p>
                     <p className="item-subtitle">URL：<a href="https://github.com/fangge/children-rewards-collect" target="_blank">https://github.com/fangge/children-rewards-collect</a></p>
                     <ul className="section-content">
                       <li>Independently built a cross-platform desktop app with Electron for macOS/Windows, designed for managing children&apos;s award records and certificate display</li>
-                      <li>Frontend powered by React 18 + Vite 4 + TypeScript 5 + Ant Design 5, featuring child profile management, certificate categorization with image upload, and a timeline visualization wall</li>
+                      <li>Frontend powered by React + Vite + TypeScript + Ant Design, featuring child profile management, certificate categorization with image upload, and a timeline visualization wall</li>
                       <li>Local data persistence via electron-store with JSON import/export and merge support, plus custom image storage paths organized by award date</li>
                       <li>Engineering standards include ESLint + Prettier, Git Hooks for commit validation, electron-builder for installer packaging, and pnpm for dependency management</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div className="section-bd">
+                <div className="item">
+                  <header className="item-hd">
+                    <h3 className="item-name">
+                      <svg
+                        t="1648486800414"
+                        class="icon"
+                        viewBox="0 0 1024 1024"
+                        version="1.1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        p-id="2251"
+                        width="16"
+                        height="16"
+                      >
+                        <path
+                          d="M512 672l379.733333-189.866667c17.066667-6.4 34.133333 0 42.666667 14.933334 8.533333 14.933333 2.133333 34.133333-12.8 42.666666l-394.666667 196.266667c-8.533333 4.266667-19.2 4.266667-29.866666 0L104.533333 541.866667c-14.933333-8.533333-21.333333-27.733333-12.8-42.666667s27.733333-23.466667 42.666667-14.933333L512 672z m0 0"
+                          fill="#2c2c2c"
+                          p-id="2252"
+                        ></path>
+                        <path
+                          d="M512 868.266667l379.733333-189.866667c17.066667-6.4 34.133333 0 42.666667 14.933333 8.533333 14.933333 2.133333 34.133333-12.8 42.666667l-394.666667 196.266667c-8.533333 4.266667-19.2 4.266667-29.866666 0L104.533333 738.133333c-14.933333-8.533333-21.333333-27.733333-12.8-42.666666s27.733333-23.446667 42.666667-14.933334L512 868.266667zM104.533333 343.466667c-12.8-4.266667-19.2-14.933333-19.2-27.733334 0-12.8 6.4-23.466667 19.2-29.866666l394.666667-196.266667c8.533333-4.266667 19.2-4.266667 29.866667 0l394.666666 196.266667c10.666667 6.4 19.2 17.066667 19.2 29.866666 0 12.8-6.4 23.466667-19.2 29.866667l-394.666666 196.266667c-8.533333 4.266667-19.2 4.266667-29.866667 0L104.533333 343.466667zM512 475.733333l320-160-320-160-320 160 320 160z m0 0"
+                          fill="#2c2c2c"
+                          p-id="2253"
+                        ></path>
+                      </svg>
+                      Guangdong Gaokao College Selection Analysis System
+                    </h3>
+                  </header>
+                  <div className="item-bd">
+                    <p className="item-subtitle">Tech Stack: React, Vite, Tailwind CSS, IndexedDB</p>
+                    <p className="item-subtitle">URL: <a href="https://gaokaoscore.mrfangge.com" target="_blank">https://gaokaoscore.mrfangge.com</a></p>
+                    <ul className="section-content">
+                      <li>Built a college application decision-support system using official admission data published by the Guangdong Education Examinations Authority, combining search, recommendation, comparison, and analysis. It covers <strong>undergraduate and junior college</strong> programs across <strong>physics and history</strong> tracks, helping students make more informed application decisions</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div className="section-bd">
+                <div className="item">
+                  <header className="item-hd">
+                    <h3 className="item-name">
+                      <svg
+                        t="1648486800414"
+                        class="icon"
+                        viewBox="0 0 1024 1024"
+                        version="1.1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        p-id="2251"
+                        width="16"
+                        height="16"
+                      >
+                        <path
+                          d="M512 672l379.733333-189.866667c17.066667-6.4 34.133333 0 42.666667 14.933334 8.533333 14.933333 2.133333 34.133333-12.8 42.666666l-394.666667 196.266667c-8.533333 4.266667-19.2 4.266667-29.866666 0L104.533333 541.866667c-14.933333-8.533333-21.333333-27.733333-12.8-42.666667s27.733333-23.466667 42.666667-14.933333L512 672z m0 0"
+                          fill="#2c2c2c"
+                          p-id="2252"
+                        ></path>
+                        <path
+                          d="M512 868.266667l379.733333-189.866667c17.066667-6.4 34.133333 0 42.666667 14.933333 8.533333 14.933333 2.133333 34.133333-12.8 42.666667l-394.666667 196.266667c-8.533333 4.266667-19.2 4.266667-29.866666 0L104.533333 738.133333c-14.933333-8.533333-21.333333-27.733333-12.8-42.666666s27.733333-23.446667 42.666667-14.933334L512 868.266667zM104.533333 343.466667c-12.8-4.266667-19.2-14.933333-19.2-27.733334 0-12.8 6.4-23.466667 19.2-29.866666l394.666667-196.266667c8.533333-4.266667 19.2-4.266667 29.866667 0l394.666666 196.266667c10.666667 6.4 19.2 17.066667 19.2 29.866666 0 12.8-6.4 23.466667-19.2 29.866667l-394.666666 196.266667c-8.533333 4.266667-19.2 4.266667-29.866667 0L104.533333 343.466667zM512 475.733333l320-160-320-160-320 160 320 160z m0 0"
+                          fill="#2c2c2c"
+                          p-id="2253"
+                        ></path>
+                      </svg>
+                      WeChat Mini Program: Happy Family Outings
+                    </h3>
+                  </header>
+                  <div className="item-bd">
+                    <p className="item-subtitle">Tech Stack: React, Taro</p>
+                    <ul className="section-content">
+                      <li>Covers family-friendly destinations across Guangdong, Hong Kong, and Macao. Users can submit and review locations and receive nearby recommendations based on existing destination data</li>
                     </ul>
                   </div>
                 </div>

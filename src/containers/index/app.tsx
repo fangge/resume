@@ -102,8 +102,8 @@ const App: React.FC = () => {
                 <div className="item">
                   <div className="item-bd">
                     <ul className="section-content">
-                      <li><strong>前端框架：</strong>React 18+、TypeScript、Ant Design</li>
-                      <li><strong>工程化体系：</strong>pnpm v10+、Gulp、Node.js v22+</li>
+                      <li><strong>前端框架：</strong>React、TypeScript、Ant Design</li>
+                      <li><strong>工程化体系：</strong>pnpm、Gulp、Node.js</li>
                       <li><strong>AI / LLM：</strong>Dify 平台、Prompt Engineering、SSE 流式传输、多模态交互、AI Agent</li>
                       <li><strong>跨端 & SDK：</strong>移动端 H5、拉起客户端 SDK</li>
                       <li><strong>组件化 & npm 生态：</strong>自研 3 个核心 npm 包，沉淀 50+ 通用业务组件（12 大类）</li>
@@ -196,7 +196,7 @@ const App: React.FC = () => {
                       负责虎牙直播核心赛事和营收业务（DIY 平台、支付、认证）及 AI 智能应用的前端开发与架构维护，主导团队工程化建设与组件化沉淀，支撑公司每年数百场活动快速上线。
                     </p>
                     <ul className="section-content">
-                      <li><i>DIY 平台核心建设</i>：负责 DIY 平台整体前端架构迭代，搭建基于React 18 + pnpm v10 + Node v22+的移动端标准化开发模板，统一团队技术栈与开发规范；设计全局 JS/CSS 构建体系（Gulp）与 Tiger 发布流程，保障线上资源稳定更新。</li>
+                      <li><i>DIY 平台核心建设</i>：负责 DIY 平台整体前端架构迭代，搭建基于React + pnpm + Node的移动端标准化开发模板，统一团队技术栈与开发规范；设计全局 JS/CSS 构建体系（Gulp）与 Tiger 发布流程，保障线上资源稳定更新。</li>
                       <li><i>组件化与 npm 生态</i>：自研 3 个团队核心 npm 包（@diy-npm/diyrealprizeCollect收货、@diy-npm/diybindGame绑定、@diy-npm/utils工具库），沉淀好友裂变、任务抽奖、积分兑换、徽章、榜单、自办赛等 12 大类 50 + 通用业务组件，组件复用率达 80%，单个活动开发周期缩短 50%。</li>
                       <li><i>主导 DIY 搭建平台 AI 智能助手</i>：基于 Dify 平台实现组件问答、配置推荐、问题排障等 AI 能力，集成 SSE 流式传输与多模态交互，覆盖运营团队日常搭建场景，显著降低人工答疑成本</li>
                       <li><i>核心业务支撑</i>：虎牙全场景实名认证体系（实名上麦、陪练认证、提现实名、商城端外实名等）、三方支付体系、4 个核心业务中间页及@huyafed/openapp拉起虎牙 SDK 的开发与维护，支撑公司 10 + 核心业务线的稳定运行。</li>
@@ -469,12 +469,12 @@ const App: React.FC = () => {
                   </header>
 
                   <div className="item-bd">
-                    <p className="item-subtitle">技术栈：React 19、TypeScript、Vite 6、TailwindCSS v4、React Router v7、Node.js、Express、Supabase、Vercel、PWA</p>
+                    <p className="item-subtitle">技术栈：React、TypeScript、Vite、TailwindCSS、React Router、Node.js、Express、Supabase、Vercel、PWA</p>
                     <p className="item-subtitle">项目地址：<a href="https://littletreecheckin.mrfangge.com/" target="_blank">https://littletreecheckin.mrfangge.com/</a></p>
                     <ul className="section-content">
                       <li>从 0 到 1 独立完成全栈游戏化儿童习惯养成 PWA 应用，覆盖森林主页可视化、每日打卡审核、勋章成就系统、果实商店、共享任务竞争等 10+ 核心功能模块</li>
-                      <li>前端基于 React 19 + TypeScript + Vite 6 + TailwindCSS v4 + motion/react，React Router v7 路由级代码分割与懒加载，实现移动端 / 桌面端自适应布局与深色模式</li>
-                      <li>后端基于 Node.js + Express 4 + TypeScript，Supabase (PostgreSQL) 数据持久化与 Auth 认证体系，全栈部署于 Vercel Serverless Functions</li>
+                      <li>前端基于 React + TypeScript + Vite + TailwindCSS + motion/react，React Router 路由级代码分割与懒加载，实现移动端 / 桌面端自适应布局与深色模式</li>
+                      <li>后端基于 Node.js + Express + TypeScript，Supabase (PostgreSQL) 数据持久化与 Auth 认证体系，全栈部署于 Vercel Serverless Functions</li>
                       <li>支持 PWA 离线缓存与安装到主屏幕，覆盖 Android Chrome / iOS Safari / 桌面端，已有真实用户持续使用</li>
                     </ul>
                   </div>
@@ -511,11 +511,11 @@ const App: React.FC = () => {
                     </h3>
                   </header>
                   <div className="item-bd">
-                    <p className="item-subtitle">技术栈：Electron 25、React 18、Vite 4、TypeScript 5、Ant Design 5、electron-store、electron-builder</p>
+                    <p className="item-subtitle">技术栈：Electron、React、Vite、TypeScript、Ant Design、electron-store、electron-builder</p>
                     <p className="item-subtitle">项目地址：<a href="https://github.com/fangge/children-rewards-collect" target="_blank">https://github.com/fangge/children-rewards-collect</a></p>
                     <ul className="section-content">
                       <li>基于 Electron 独立开发跨平台桌面应用，支持 macOS / Windows，用于管理儿童获奖信息与证书展示</li>
-                      <li>前端基于 React 18 + Vite 4 + TypeScript 5 + Ant Design 5，实现孩子档案管理、证书分类与图片上传、时间轴可视化展示墙</li>
+                      <li>前端基于 React + Vite + TypeScript + Ant Design，实现孩子档案管理、证书分类与图片上传、时间轴可视化展示墙</li>
                       <li>使用 electron-store 实现本地数据持久化，支持 JSON 格式导入/导出及数据合并，自定义图片存储路径按奖项时间分类归档</li>
                       <li>工程化方面配置 ESLint + Prettier 代码规范、Git Hooks 提交校验、electron-builder 安装包构建，基于 pnpm 管理依赖</li>
                     </ul>
@@ -552,7 +552,7 @@ const App: React.FC = () => {
                     </h3>
                   </header>
                   <div className="item-bd">
-                    <p className="item-subtitle">技术栈：React 19、Vite 6、Tailwind CSS 4、IndexedDB</p>
+                    <p className="item-subtitle">技术栈：React、Vite、Tailwind CSS、IndexedDB</p>
                     <p className="item-subtitle">项目地址：<a href="https://gaokaoscore.mrfangge.com" target="_blank">https://gaokaoscore.mrfangge.com</a></p>
                     <ul className="section-content">
                       <li>基于广东省教育考试院公布的官方投档数据，构建了一个集「查询 · 推荐 · 对比 · 研判」于一体的高考志愿填报辅助系统。系统覆盖<strong>本科与专科</strong>两个层次，支持<strong>物理、历史</strong>两大科类，帮助用户在填报志愿时做出更科学、更理性的决策</li>
