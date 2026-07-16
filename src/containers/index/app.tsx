@@ -561,6 +561,7 @@ const App: React.FC = () => {
                   </div>
                 </div>
               </div>
+              <hr />
               <div className="section-bd">
                 <div className="item">
                   <header className="item-hd">
